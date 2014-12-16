@@ -1,0 +1,21 @@
+/**
+*
+* Link
+*
+**/
+
+a {
+  color: $colorRed400;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.cta--primary {
+  @include style-cta($colorRed400, $icon-chevron-right);
+}
+
+.cta--secondary {
+  @include style-cta($colorRed400);
+}
