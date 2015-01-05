@@ -1,9 +1,5 @@
 <!doctype html>
 <html lang="es">
-<!--
-call this one when english language
-<html lang="en-US">
--->
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -74,11 +70,16 @@ call this one when english language
       <!---->
       <section class="section wiad-agenda-container">
         <h2 id="agenda">Agenda</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.</p> 
+        <h3>Main tracks</h3>
+        <p>5 speakers discussing important trends from <a href="//twitter.com/#IA" target="_blank">#IA</a> and <a href="//twitter.com/#UX" target="_blank">#UX</a>. 50 minutes with me most relevant on #InformationArchitecture and #UserExperience on México and around the world!</p> 
+        <h3>Lightning talks</h3>
+        <p>Completing our main tracks, 4 presenters that will have a 10 minutes each to show your ideas and how they are changing IA in our community. The best idea will have a 20 minute spot!</p> 
+        <p><a href="//en.wikipedia.org/wiki/Lightning_talk" target="_blank">Want to know more about Lightning and how it works?</a></p>
+        <p><b>Want to submit your ligthning talk?</b> <a href="//www.perl.com/pub/2004/07/30/lightningtalk.html" target="_blank">Check how you can create yours</a> and <a href="" target="_blank">submit using this link until january 25th</a>. Best papers will get a chance to show in a great place that your ideas can change the CDMx for good!</p>
+
         <div id="wiad-tracks-container" class="tracks-container">
             <table class="track-table">
-                <caption class="default-text track-table__caption">IBM Auditorium</caption>
+                <caption class="default-text track-table__caption caption-auditorium">IBM Auditorium</caption>
                 <thead>
                     <tr>
                         <th scope="col">Time</th>
@@ -89,19 +90,19 @@ call this one when english language
                     <tr class="track-container">
                         <th scope="row"><em class="track-time">08:30</em></th>
                         <td>
-                            <strong class="button--primary track-expand track-speaker track-speaker--interval">Check-in</strong>
+                            <strong class="track-expand track-speaker track-speaker--interval">Check-in</strong>
                         </td>
                     </tr>
                     <tr class="track-container">
                         <th scope="row"><em class="track-time">09:00</em></th>
                         <td>
-                            <strong class="button--primary track-expand track-speaker track-speaker--interval">Opening</strong>
+                            <strong class="track-expand track-speaker track-speaker--interval">Opening</strong>
                         </td>
                     </tr>
                     <tr class="track-container">
                         <th scope="row"><em class="track-time">09:20</em></th>
-                        <td>
-                            <button type="button" class="button--primary track-expand track-speaker">Speaker 1</button>
+                        <td class="speech-container"><span class="keynote"></span>
+                            <div class="track-expand track-speaker">Speaker 1</div>
                             <strong class="track-title">Presentation title</strong>
                             <div class="tracks-about">
                               <p class="track-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -110,8 +111,8 @@ call this one when english language
                     </tr>
                     <tr class="track-container">
                         <th scope="row"><em class="track-time">10:20</em></th>
-                        <td>
-                            <button type="button" class="button--primary track-expand track-speaker">Speaker 2</button>
+                        <td class="speech-container"><span class="keynote"></span>
+                            <div class="track-expand track-speaker">Speaker 2</div>
                             <strong class="track-title">Presentation title</strong>
                             <div class="tracks-about">
                               <p class="track-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -121,13 +122,13 @@ call this one when english language
                     <tr class="track-container">
                         <th scope="row"><em class="track-time">11:20</em></th>
                         <td>
-                            <strong class="button--primary track-expand track-speaker track-speaker--interval">Coffee-Break</strong>
+                            <strong class="track-expand track-speaker track-speaker--interval">Coffee-Break</strong>
                         </td>
                     </tr>
                     <tr class="track-container">
                         <th scope="row"><em class="track-time">11:40</em></th>
-                        <td>
-                            <button type="button" class="button--primary track-expand track-speaker">Lightning Talk 1</button>
+                        <td class="speech-container"><span class="lightning"></span>
+                            <div class="track-expand track-speaker">Lightning Talk 1</div>
                             <strong class="track-title">Presentation title</strong>
                             <div class="tracks-about">
                               <p class="track-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -136,8 +137,8 @@ call this one when english language
                     </tr>
                     <tr class="track-container">
                         <th scope="row"><em class="track-time">12:00</em></th>
-                        <td>
-                            <button type="button" class="button--primary track-expand track-speaker">Lightning Talk 1 - Speaker Name</button>
+                        <td class="speech-container"><span class="keynote"></span>
+                            <div class="track-expand track-speaker">Speaker 3</div>
                             <strong class="track-title">Presentation title</strong>
                             <div class="tracks-about">
                               <p class="track-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -147,7 +148,7 @@ call this one when english language
                     <tr class="track-container">
                         <th scope="row"><em class="track-time">13:00</em></th>
                         <td>
-                           <strong class="button--primary track-expand track-speaker track-speaker--interval">Lunch time</strong>
+                           <strong class="track-expand track-speaker track-speaker--interval">Lunch time</strong>
                         </td>
                     </tr>
                     <tr class="track-container">
@@ -177,13 +178,13 @@ call this one when english language
                     <tr class="track-container">
                         <th scope="row"><em class="track-time">16:00</em></th>
                         <td>
-                            <strong class="button--primary track-expand track-speaker track-speaker--interval">Coffee-Break</strong>
+                            <strong class="track-expand track-speaker track-speaker--interval">Coffee-Break</strong>
                         </td>
                     </tr>
                     <tr class="track-container">
                         <th scope="row"><em class="track-time">16:20</em></th>
-                        <td>
-                            <button type="button" class="button--primary track-expand track-speaker">Speaker 4</button>
+                        <td class="speech-container"><span class="keynote"></span>
+                            <div class="track-expand track-speaker">Speaker 4</div>
                             <strong class="track-title">Presentation title</strong>
                             <div class="tracks-about">
                               <p class="track-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -192,8 +193,8 @@ call this one when english language
                     </tr>
                     <tr class="track-container">
                         <th scope="row"><em class="track-time">17:20</em></th>
-                        <td>
-                            <button type="button" class="button--primary track-expand track-speaker">Speaker 5</button>
+                        <td class="speech-container"><span class="keynote"></span>
+                            <div class="track-expand track-speaker">Speaker 5</div>
                             <strong class="track-title">Presentation title</strong>
                             <div class="tracks-about">
                               <p class="track-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -203,14 +204,14 @@ call this one when english language
                     <tr class="track-container">
                         <th scope="row"><em class="track-time">18:20</em></th>
                         <td>
-                            <strong class="button--primary track-expand track-speaker track-speaker--interval">Closure</strong>
+                            <strong class="track-expand track-speaker track-speaker--interval">Closure</strong>
                         </td>
                     </tr>
                 </tbody>
             </table>
             <span class="vertical-separator">&nbsp;</span>
             <table class="flow-opposite track-table track-table--second-day col-5-12">
-                <caption class="default-text track-table__caption">IBM Studio Lab</caption>
+                <caption class="default-text track-table__caption caption-lab">IBM Studio Lab</caption>
                 <thead>
                     <tr>
                         <th scope="col">Time</th>
@@ -268,8 +269,8 @@ call this one when english language
                     </tr>
                     <tr class="track-container">
                         <th scope="row"><em class="track-time">15:00</em></th>
-                        <td>
-                            <button type="button" class="button--primary track-expand track-speaker">Lightning Talk 2 - Speaker Name</button>
+                        <td class="speech-container"><span class="lightning"></span>
+                            <div class="track-expand track-speaker">Lightning Talk 2</div>
                             <strong class="track-title">Presentation title</strong>
                             <div class="tracks-about">
                               <p class="track-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -278,8 +279,8 @@ call this one when english language
                     </tr>
                     <tr class="track-container">
                         <th scope="row"><em class="track-time">15:15</em></th>
-                        <td>
-                            <button type="button" class="button--primary track-expand track-speaker">Lightning Talk 3 - Speaker Name</button>
+                        <td class="speech-container"><span class="lightning"></span>
+                            <div class="track-expand track-speaker">Lightning Talk 3</div>
                             <strong class="track-title">Presentation title</strong>
                             <div class="tracks-about">
                               <p class="track-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -288,8 +289,8 @@ call this one when english language
                     </tr>
                     <tr class="track-container">
                         <th scope="row"><em class="track-time">15:30</em></th>
-                        <td>
-                            <button type="button" class="button--primary track-expand track-speaker">Lightning Talk 4 - Speaker Name</button>
+                        <td class="speech-container"><span class="lightning"></span>
+                            <div class="track-expand track-speaker">Lightning Talk 4</div>
                             <strong class="track-title">Presentation title</strong>
                             <div class="tracks-about">
                               <p class="track-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -298,8 +299,8 @@ call this one when english language
                     </tr>
                     <tr class="track-container">
                         <th scope="row"><em class="track-time">15:45</em></th>
-                        <td>
-                            <button type="button" class="button--primary track-expand track-speaker">Lightning Talk 5 - Speaker Name</button>
+                        <td class="speech-container"><span class="lightning"></span>
+                            <div class="track-expand track-speaker">Lightning Talk 5</div>
                             <strong class="track-title">Presentation title</strong>
                             <div class="tracks-about">
                               <p class="track-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -309,7 +310,7 @@ call this one when english language
                     <tr class="track-container">
                         <th scope="row"><em class="track-time">16:00</em></th>
                         <td>
-                            <strong class="button--primary track-expand track-speaker track-speaker--interval">Coffee-Break</strong>
+                            <strong class="track-expand track-speaker track-speaker--interval">Coffee-Break</strong>
                         </td>
                     </tr>
                     <tr class="track-container">
@@ -337,21 +338,20 @@ call this one when english language
       <!---->
       <section class="section wiad-speakers-container">
         <h2 id="speakers">Speakers</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Our speakers are developing relevant work on CDMx UX and Information Architecture. Over a whole day you will be in touch with some of the most acclaimed professionals on Information Architecture and User Experience matters in México.</p>
         <ul class="wiad-speaker-list">
           <li>
             <a data-layer="1" class="wiad-speaker-card" href="#speaker1" title="More abt speaker#1">
               <img class="wiad-speaker-photo" src="images/speakers/speaker2-conc-left.jpg" alt="Image of speaker#1" width="260" height="134">
               <h3 class="default-text wiad-speaker-name">Speaker</h3>
-              <p><strong class="wiad-speaker-company">IBM</strong></p>
+              <p><strong class="wiad-speaker-company">TBD</strong></p>
               <span class="wiad-speaker-country wiad-speaker-country-usa">Estados Unidos</span>
             </a>
           </li>
           <li>
             <a data-layer="2" class="wiad-speaker-card" href="#speaker2" title="More abt speaker#2">
               <img class="wiad-speaker-photo" src="images/speakers/speaker2-conc-right.jpg" alt="Image of speaker#2" width="260" height="134">
-              <h3 class="default-text wiad-speaker-name">Speaker</h3>
+              <h3 class="default-text wiad-speaker-name">Alysson  Martins</h3>
               <p><strong class="wiad-speaker-company">IBM</strong></p>
               <span class="wiad-speaker-country wiad-speaker-country-brazil">Brasil</span>
             </a>
@@ -359,16 +359,16 @@ call this one when english language
           <li>
             <a data-layer="3" class="wiad-speaker-card" href="#speaker3" title="More abt speaker#3">
               <img class="wiad-speaker-photo" src="images/speakers/speaker2-conc-left.jpg" alt="Image of speaker#3" width="260" height="134">
-              <h3 class="default-text wiad-speaker-name">Speaker</h3>
-              <p><strong class="wiad-speaker-company">IBM</strong></p>
-              <span class="wiad-speaker-country wiad-speaker-country-spain">España</span>
+              <h3 class="default-text wiad-speaker-name">Alfredo Sanchez</h3>
+              <p><strong class="wiad-speaker-company">UDLAP</strong></p>
+              <span class="wiad-speaker-country wiad-speaker-country-mexico">México</span>
             </a>
           </li>
           <li>
             <a data-layer="4" class="wiad-speaker-card" href="#speaker4" title="More abt speaker#4">
               <img class="wiad-speaker-photo" src="images/speakers/speaker2-conc-right.jpg" alt="Image of speaker#4" width="260" height="134">
               <h3 class="default-text wiad-speaker-name">Speaker</h3>
-              <p><strong class="wiad-speaker-company">IBM</strong></p>
+              <p><strong class="wiad-speaker-company">TBD</strong></p>
               <span class="wiad-speaker-country wiad-speaker-country-argentina">Argentina</span>
             </a>
           </li>
@@ -376,7 +376,7 @@ call this one when english language
             <a data-layer="5" class="wiad-speaker-card" href="#speaker5" title="More abt speaker#5">
               <img class="wiad-speaker-photo" src="images/speakers/speaker2-conc-left.jpg" alt="Image of speaker#5" width="260" height="134">
               <h3 class="default-text wiad-speaker-name">Speaker</h3>
-              <p><strong class="wiad-speaker-company">IBM</strong></p>
+              <p><strong class="wiad-speaker-company">TBD</strong></p>
               <span class="wiad-speaker-country wiad-speaker-country-mexico">México</span>
             </a>
           </li>
@@ -384,7 +384,7 @@ call this one when english language
             <a data-layer="6" class="wiad-speaker-card" href="#speaker6" title="More abt speaker#6">
               <img class="wiad-speaker-photo" src="images/speakers/speaker2-conc-right.jpg" alt="Image of speaker#6" width="260" height="134">
               <h3 class="default-text wiad-speaker-name">Speaker</h3>
-              <p><strong class="wiad-speaker-company">IBM</strong></p>
+              <p><strong class="wiad-speaker-company">TBD</strong></p>
               <span class="wiad-speaker-country wiad-speaker-country-mexico">Mexico</span>
             </a>
           </li>
@@ -393,8 +393,7 @@ call this one when english language
       <!---->
       <section class="section wiad-location-container">
         <h2 id="location">Location</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>IBM will be our first venue and México. #WIAD will arrive on the newest #IBMStudio in the world, first of its kind on Latin America!</p>
         <div id="map_canvas" style="width:100%; height:400px; margin-bottom:20px;"></div>
         <div id="slider1_container" style="position: relative; top: 0px; left: 14px; width: 800px;
         height: 700px; background: #191919; overflow: hidden">
@@ -545,14 +544,14 @@ call this one when english language
         <!--Add UX Calendar from UX BLABLABLA-->
       </section>
       <!---->
-      <section class="section wiad-location-container">
+      <section class="section wiad-tickets-container">
         <h2 id="tickets">Tickets</h2>
         <div style="width:100%; text-align:left;" >
           <iframe  src="https://eventbrite.com/tickets-external?eid=15097931319&ref=etckt" frameborder="0" height="214" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="no" allowtransparency="true"></iframe>
         </div>
       </section>
       <!---->
-      <section class="section wiad-location-container">
+      <section class="section wiad-sponsors-container">
         <h2 id="Sponsors">Sponsors</h2>
         <p>This event is brought to you by <a href="//iainstitute.org/"><b>The Information Architecture Institute</b></a>, the <a href="//www.ibm.com/design/studio.shtml"><b>IBM Studio Mexico</b></a> and the Irresistible Force from a <a href="//www.meetup.com/UX-in-MX/"><b>group of volunteers</b></a>!</p>
         <div align="center" width="100%" style="background-color:white"><a href="http://iainstitute.org/"><img src="http://2015.worldiaday.org/img/iabanner.png" alt="The Information Architecture Institute banner" width="70%"></a></div>
@@ -562,124 +561,476 @@ call this one when english language
       </section>
       <!---->
       <!--Overlay-->
-      <div id="wiad-overlay-container" class="speakers-overlay-container">
-        <button id="wiad-overlay-button-prev" class="default-button overlay-button overlay-button--prev">Previous Speaker</button>
-        <ul>
-          <!-- SPEAKER #1 -->
-          <li class="overlay-item overlay-item--speaker1" itemprop="performer" itemscope="" itemtype="http://schema.org/Person" style="display: list-item; z-index: 1;">
-              <div class="wiad-speaker-info">
-                  <h3 id="speaker1" class="wiad-speaker-info__name default-text" itemprop="name" data-order="1">Speaker1</h3>
-                  <ul class="wiad-speaker-links-container">
-                      <li class="wiad-speaker-links-container__item">
-                          <a class="wiad-speaker-links-container__anchor" href="https://twitter.com/speaker1">@speaker1</a>
-                      </li>
-                      <li class="wiad-speaker-links-container__item">
-                          <a class="wiad-speaker-links-container__anchor" href="https://github.com/speaker1">github.com/speaker1</a>
-                      </li>
-                  </ul>
+      <section class="wiad-overlay-container speakers-overlay-container">
+        <!-- SPEAKER #1 -->
+        <section class="modal--show" id="speaker1" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+          <div class="modal-inner" itemprop="performer" itemscope="" itemtype="http://schema.org/Person" data-order="1">
+              <header id="modal-label1">
+                <h3 class="wiad-speaker-info__name default-text" itemprop="name">Speaker1</h3>
+              </header>
+              <div class="modal-content">
+                <div class="wiad-speaker-info">
                   <div class="wiad-speaker-bio" itemprop="description">
                       <p class="default-paragraph wiad-speaker-bio__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
                   </div>
+                </div>
               </div>
-          </li>
-          <!-- END SPEAKER #1 -->
-          <!-- SPEAKER #2 -->
-          <li class="overlay-item overlay-item--speaker2" itemprop="performer" itemscope="" itemtype="http://schema.org/Person" style="display: list-item; z-index: 1;">
-              <div class="wiad-speaker-info" style="">
-                  <h3 id="speaker2" class="wiad-speaker-info__name default-text" itemprop="name" data-order="2">Speaker1</h3>
-                  <ul class="wiad-speaker-links-container">
-                      <li class="wiad-speaker-links-container__item">
-                          <a class="wiad-speaker-links-container__anchor" href="https://twitter.com/speaker2">@speaker2</a>
-                      </li>
-                      <li class="wiad-speaker-links-container__item">
-                          <a class="wiad-speaker-links-container__anchor" href="https://github.com/speaker2">github.com/speaker2</a>
-                      </li>
-                  </ul>
+              <footer>
+                <ul class="wiad-speaker-links-container">
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor twitter" href="//twitter.com/speakerstwitter" title="Twitter of Speaker">Twitter</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor github" href="//github.com/speakersgithub" title="GitHub of Speaker">GitHub</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor Linkedin" href="//mx.linkedin.com/in/" title="Linkedin of Speaker">Linkedin</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor slideshare" href="//github.com/speakersgithub" title="SlideShare of Speaker">SlideShare</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor speakerdeck" href="//github.com/speakersgithub" title="SpeakerDeck of Speaker">SpeakerDeck</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor dribble" href="//github.com/speakersgithub" title="Dribble of Speaker">Dribble</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor behance" href="//github.com/speakersgithub" title="Behance of Speaker">Behance</a>
+                  </li>
+                </ul>
+              </footer>
+          </div>
+          <a href="#!" class="modal-close" title="Close this modal" data-close="Close" data-dismiss="modal">?</a>
+        </section>
+        <!-- END SPEAKER #1 -->
+        <!-- SPEAKER #2 -->
+        <section class="modal--show" id="speaker2" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+          <div class="modal-inner" itemprop="performer" itemscope="" itemtype="http://schema.org/Person" data-order="2">
+              <header id="modal-label2">
+                <h3 class="wiad-speaker-info__name default-text" itemprop="name">Alysson Franklin</h3>
+              </header>
+              <div class="modal-content">
+                <div class="wiad-speaker-info">
+                  <div class="wiad-speaker-bio" itemprop="description">
+                      <img src="images/speakers/alysson.jpg" width="250" height="150" alt="Alysson Franklin Martins Moreira picture" itemprop="image">
+                      <p class="default-paragraph wiad-speaker-bio__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+                  </div>
+                </div>
+              </div>
+              <footer>
+                <ul class="wiad-speaker-links-container">
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor twitter" href="//twitter.com/alyssonfranklin" title="Twitter of Alysson Franklin">Twitter</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor github" href="//github.com/alyssonfranklin" title="GitHub of Alysson Franklin">GitHub</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor Linkedin" href="//mx.linkedin.com/in/alyssonfrk/" title="Linkedin of Alysson Franklin">Linkedin</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor slideshare" href="//github.com/speakersgithub" title="SlideShare of Alysson Franklin">SlideShare</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor speakerdeck" href="//github.com/speakersgithub" title="SpeakerDeck of Alysson Franklin">SpeakerDeck</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor dribble" href="//github.com/speakersgithub" title="Dribble of Alysson Franklin">Dribble</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor behance" href="//github.com/speakersgithub" title="Behance of Alysson Franklin">Behance</a>
+                  </li>
+                </ul>
+              </footer>
+          </div>
+          <a href="#!" class="modal-close" title="Close this modal" data-close="Close" data-dismiss="modal">?</a>
+        </section>
+        <!-- END SPEAKER #2 -->
+        <!-- SPEAKER #3 -->
+        <section class="modal--show" id="speaker3" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+          <div class="modal-inner" itemprop="performer" itemscope="" itemtype="http://schema.org/Person" data-order="3">
+              <header id="modal-label3">
+                <h3 class="wiad-speaker-info__name default-text" itemprop="name">Speaker3</h3>
+              </header>
+              <div class="modal-content">
+                <div class="wiad-speaker-info">
                   <div class="wiad-speaker-bio" itemprop="description">
                       <p class="default-paragraph wiad-speaker-bio__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
                   </div>
+                </div>
               </div>
-          </li>
-          <!-- END SPEAKER #2 -->
-          <!-- SPEAKER #3 -->
-          <li class="overlay-item overlay-item--speaker3" itemprop="performer" itemscope="" itemtype="http://schema.org/Person" style="display: list-item; z-index: 1;">
-              <div class="wiad-speaker-info" style="">
-                  <h3 id="speaker3" class="wiad-speaker-info__name default-text" itemprop="name" data-order="3">Speaker1</h3>
-                  <ul class="wiad-speaker-links-container">
-                      <li class="wiad-speaker-links-container__item">
-                          <a class="wiad-speaker-links-container__anchor" href="https://twitter.com/speaker3">@speaker3</a>
-                      </li>
-                      <li class="wiad-speaker-links-container__item">
-                          <a class="wiad-speaker-links-container__anchor" href="https://github.com/speaker3">github.com/speaker3</a>
-                      </li>
-                  </ul>
+              <footer>
+                <ul class="wiad-speaker-links-container">
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor twitter" href="//twitter.com/speakerstwitter" title="Twitter of Speaker">Twitter</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor github" href="//github.com/speakersgithub" title="GitHub of Speaker">GitHub</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor Linkedin" href="//mx.linkedin.com/in/" title="Linkedin of Speaker">Linkedin</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor slideshare" href="//github.com/speakersgithub" title="SlideShare of Speaker">SlideShare</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor speakerdeck" href="//github.com/speakersgithub" title="SpeakerDeck of Speaker">SpeakerDeck</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor dribble" href="//github.com/speakersgithub" title="Dribble of Speaker">Dribble</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor behance" href="//github.com/speakersgithub" title="Behance of Speaker">Behance</a>
+                  </li>
+                </ul>
+              </footer>
+          </div>
+          <a href="#!" class="modal-close" title="Close this modal" data-close="Close" data-dismiss="modal">?</a>
+        </section>
+        <!-- END SPEAKER #3 -->
+        <!-- SPEAKER #4 -->
+        <section class="modal--show" id="speaker4" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+          <div class="modal-inner" itemprop="performer" itemscope="" itemtype="http://schema.org/Person" data-order="4">
+              <header id="modal-label4">
+                <h3 class="wiad-speaker-info__name default-text" itemprop="name">Speaker4</h3>
+              </header>
+              <div class="modal-content">
+                <div class="wiad-speaker-info">
                   <div class="wiad-speaker-bio" itemprop="description">
                       <p class="default-paragraph wiad-speaker-bio__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
                   </div>
+                </div>
               </div>
-          </li>
-          <!-- END SPEAKER #3 -->
-          <!-- SPEAKER #4 -->
-          <li class="overlay-item overlay-item--speaker4" itemprop="performer" itemscope="" itemtype="http://schema.org/Person" style="display: list-item; z-index: 1;">
-              <div class="wiad-speaker-info" style="">
-                  <h3 id="speaker4" class="wiad-speaker-info__name default-text" itemprop="name" data-order="4">Speaker1</h3>
-                  <ul class="wiad-speaker-links-container">
-                      <li class="wiad-speaker-links-container__item">
-                          <a class="wiad-speaker-links-container__anchor" href="https://twitter.com/speaker4">@speaker4</a>
-                      </li>
-                      <li class="wiad-speaker-links-container__item">
-                          <a class="wiad-speaker-links-container__anchor" href="https://github.com/speaker4">github.com/speaker4</a>
-                      </li>
-                  </ul>
+              <footer>
+                <ul class="wiad-speaker-links-container">
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor twitter" href="//twitter.com/speakerstwitter" title="Twitter of Speaker">Twitter</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor github" href="//github.com/speakersgithub" title="GitHub of Speaker">GitHub</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor Linkedin" href="//mx.linkedin.com/in/" title="Linkedin of Speaker">Linkedin</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor slideshare" href="//github.com/speakersgithub" title="SlideShare of Speaker">SlideShare</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor speakerdeck" href="//github.com/speakersgithub" title="SpeakerDeck of Speaker">SpeakerDeck</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor dribble" href="//github.com/speakersgithub" title="Dribble of Speaker">Dribble</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor behance" href="//github.com/speakersgithub" title="Behance of Speaker">Behance</a>
+                  </li>
+                </ul>
+              </footer>
+          </div>
+          <a href="#!" class="modal-close" title="Close this modal" data-close="Close" data-dismiss="modal">?</a>
+        </section>
+        <!-- END SPEAKER #4 -->
+        <!-- SPEAKER #5 -->
+        <section class="modal--show" id="speaker5" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+          <div class="modal-inner" itemprop="performer" itemscope="" itemtype="http://schema.org/Person" data-order="5">
+              <header id="modal-label5">
+                <h3 class="wiad-speaker-info__name default-text" itemprop="name">Speaker5</h3>
+              </header>
+              <div class="modal-content">
+                <div class="wiad-speaker-info">
                   <div class="wiad-speaker-bio" itemprop="description">
                       <p class="default-paragraph wiad-speaker-bio__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
                   </div>
+                </div>
               </div>
-          </li>
-          <!-- END SPEAKER #4 -->
-          <!-- SPEAKER #5 -->
-          <li class="overlay-item overlay-item--speaker5" itemprop="performer" itemscope="" itemtype="http://schema.org/Person" style="display: list-item; z-index: 1;">
-              <div class="wiad-speaker-info" style="">
-                  <h3 id="speaker5" class="wiad-speaker-info__name default-text" itemprop="name" data-order="5">Speaker5</h3>
-                  <ul class="wiad-speaker-links-container">
-                      <li class="wiad-speaker-links-container__item">
-                          <a class="wiad-speaker-links-container__anchor" href="https://twitter.com/speaker5">@speaker5</a>
-                      </li>
-                      <li class="wiad-speaker-links-container__item">
-                          <a class="wiad-speaker-links-container__anchor" href="https://github.com/speaker5">github.com/speaker5</a>
-                      </li>
-                  </ul>
+              <footer>
+                <ul class="wiad-speaker-links-container">
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor twitter" href="//twitter.com/speakerstwitter" title="Twitter of Speaker">Twitter</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor github" href="//github.com/speakersgithub" title="GitHub of Speaker">GitHub</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor Linkedin" href="//mx.linkedin.com/in/" title="Linkedin of Speaker">Linkedin</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor slideshare" href="//github.com/speakersgithub" title="SlideShare of Speaker">SlideShare</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor speakerdeck" href="//github.com/speakersgithub" title="SpeakerDeck of Speaker">SpeakerDeck</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor dribble" href="//github.com/speakersgithub" title="Dribble of Speaker">Dribble</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor behance" href="//github.com/speakersgithub" title="Behance of Speaker">Behance</a>
+                  </li>
+                </ul>
+              </footer>
+          </div>
+          <a href="#!" class="modal-close" title="Close this modal" data-close="Close" data-dismiss="modal">?</a>
+        </section>
+        <!-- END SPEAKER #5 -->
+        <!-- SPEAKER #6 -->
+        <section class="modal--show" id="speaker6" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+          <div class="modal-inner" itemprop="performer" itemscope="" itemtype="http://schema.org/Person" data-order="6">
+              <header id="modal-label6">
+                <h3 class="wiad-speaker-info__name default-text" itemprop="name">Speaker6</h3>
+              </header>
+              <div class="modal-content">
+                <div class="wiad-speaker-info">
                   <div class="wiad-speaker-bio" itemprop="description">
                       <p class="default-paragraph wiad-speaker-bio__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
                   </div>
+                </div>
               </div>
-          </li>
-          <!-- END SPEAKER #5 -->
-          <!-- SPEAKER #6 -->
-          <li class="overlay-item overlay-item--speaker1" itemprop="performer" itemscope="" itemtype="http://schema.org/Person" style="display: list-item; z-index: 1;">
-              <div class="wiad-speaker-info" style="">
-                  <h3 id="speaker6" class="wiad-speaker-info__name default-text" itemprop="name" data-order="6">Speaker1</h3>
-                  <ul class="wiad-speaker-links-container">
-                      <li class="wiad-speaker-links-container__item">
-                          <a class="wiad-speaker-links-container__anchor" href="https://twitter.com/speaker6">@speaker6</a>
-                      </li>
-                      <li class="wiad-speaker-links-container__item">
-                          <a class="wiad-speaker-links-container__anchor" href="https://github.com/speaker6">github.com/speaker6</a>
-                      </li>
-                  </ul>
+              <footer>
+                <ul class="wiad-speaker-links-container">
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor twitter" href="//twitter.com/speakerstwitter" title="Twitter of Speaker">Twitter</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor github" href="//github.com/speakersgithub" title="GitHub of Speaker">GitHub</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor Linkedin" href="//mx.linkedin.com/in/" title="Linkedin of Speaker">Linkedin</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor slideshare" href="//github.com/speakersgithub" title="SlideShare of Speaker">SlideShare</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor speakerdeck" href="//github.com/speakersgithub" title="SpeakerDeck of Speaker">SpeakerDeck</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor dribble" href="//github.com/speakersgithub" title="Dribble of Speaker">Dribble</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor behance" href="//github.com/speakersgithub" title="Behance of Speaker">Behance</a>
+                  </li>
+                </ul>
+              </footer>
+          </div>
+          <a href="#!" class="modal-close" title="Close this modal" data-close="Close" data-dismiss="modal">?</a>
+        </section>
+        <!-- END SPEAKER #6 -->
+        <!-- LIGHTNING #1 -->
+        <section class="modal--show" id="speaker7" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+          <div class="modal-inner" itemprop="performer" itemscope="" itemtype="http://schema.org/Person" data-order="7">
+              <header id="modal-label7">
+                <h3 class="wiad-speaker-info__name default-text" itemprop="name">Speaker7</h3>
+              </header>
+              <div class="modal-content">
+                <div class="wiad-speaker-info">
                   <div class="wiad-speaker-bio" itemprop="description">
                       <p class="default-paragraph wiad-speaker-bio__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
                   </div>
+                </div>
               </div>
-          </li>
-          <!-- END SPEAKER #1 -->
-        </ul>
-        <button id="wiad-overlay-button-next" class="default-button overlay-button overlay-button--next">Next Speaker</button>
-        <button id="wiad-overlay-button-close" class="default-button overlay-button overlay-close-button">Cerrar</button>
-      </div>
+              <footer>
+                <ul class="wiad-speaker-links-container">
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor twitter" href="//twitter.com/speakerstwitter" title="Twitter of Speaker">Twitter</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor github" href="//github.com/speakersgithub" title="GitHub of Speaker">GitHub</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor Linkedin" href="//mx.linkedin.com/in/" title="Linkedin of Speaker">Linkedin</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor slideshare" href="//github.com/speakersgithub" title="SlideShare of Speaker">SlideShare</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor speakerdeck" href="//github.com/speakersgithub" title="SpeakerDeck of Speaker">SpeakerDeck</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor dribble" href="//github.com/speakersgithub" title="Dribble of Speaker">Dribble</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor behance" href="//github.com/speakersgithub" title="Behance of Speaker">Behance</a>
+                  </li>
+                </ul>
+              </footer>
+          </div>
+          <a href="#!" class="modal-close" title="Close this modal" data-close="Close" data-dismiss="modal">?</a>
+        </section>
+        <!-- END LIGHTNING #1 -->
+        <!-- LIGHTNING #2 -->
+        <section class="modal--show" id="speaker8" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+          <div class="modal-inner" itemprop="performer" itemscope="" itemtype="http://schema.org/Person" data-order="8">
+              <header id="modal-label8">
+                <h3 class="wiad-speaker-info__name default-text" itemprop="name">Speaker8</h3>
+              </header>
+              <div class="modal-content">
+                <div class="wiad-speaker-info">
+                  <div class="wiad-speaker-bio" itemprop="description">
+                      <p class="default-paragraph wiad-speaker-bio__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+                  </div>
+                </div>
+              </div>
+              <footer>
+                <ul class="wiad-speaker-links-container">
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor twitter" href="//twitter.com/speakerstwitter" title="Twitter of Speaker">Twitter</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor github" href="//github.com/speakersgithub" title="GitHub of Speaker">GitHub</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor Linkedin" href="//mx.linkedin.com/in/" title="Linkedin of Speaker">Linkedin</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor slideshare" href="//github.com/speakersgithub" title="SlideShare of Speaker">SlideShare</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor speakerdeck" href="//github.com/speakersgithub" title="SpeakerDeck of Speaker">SpeakerDeck</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor dribble" href="//github.com/speakersgithub" title="Dribble of Speaker">Dribble</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor behance" href="//github.com/speakersgithub" title="Behance of Speaker">Behance</a>
+                  </li>
+                </ul>
+              </footer>
+          </div>
+          <a href="#!" class="modal-close" title="Close this modal" data-close="Close" data-dismiss="modal">?</a>
+        </section>
+        <!-- END LIGHTNING #2 -->
+        <!-- LIGHTNING #3 -->
+        <section class="modal--show" id="speaker9" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+          <div class="modal-inner" itemprop="performer" itemscope="" itemtype="http://schema.org/Person" data-order="9">
+              <header id="modal-label9">
+                <h3 class="wiad-speaker-info__name default-text" itemprop="name">Speaker9</h3>
+              </header>
+              <div class="modal-content">
+                <div class="wiad-speaker-info">
+                  <div class="wiad-speaker-bio" itemprop="description">
+                      <p class="default-paragraph wiad-speaker-bio__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+                  </div>
+                </div>
+              </div>
+              <footer>
+                <ul class="wiad-speaker-links-container">
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor twitter" href="//twitter.com/speakerstwitter" title="Twitter of Speaker">Twitter</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor github" href="//github.com/speakersgithub" title="GitHub of Speaker">GitHub</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor Linkedin" href="//mx.linkedin.com/in/" title="Linkedin of Speaker">Linkedin</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor slideshare" href="//github.com/speakersgithub" title="SlideShare of Speaker">SlideShare</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor speakerdeck" href="//github.com/speakersgithub" title="SpeakerDeck of Speaker">SpeakerDeck</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor dribble" href="//github.com/speakersgithub" title="Dribble of Speaker">Dribble</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor behance" href="//github.com/speakersgithub" title="Behance of Speaker">Behance</a>
+                  </li>
+                </ul>
+              </footer>
+          </div>
+          <a href="#!" class="modal-close" title="Close this modal" data-close="Close" data-dismiss="modal">?</a>
+        </section>
+        <!-- END LIGHTNING #3 -->
+        <!-- LIGHTNING #4 -->
+        <section class="modal--show" id="speaker10" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+          <div class="modal-inner" itemprop="performer" itemscope="" itemtype="http://schema.org/Person" data-order="10">
+              <header id="modal-label10">
+                <h3 class="wiad-speaker-info__name default-text" itemprop="name">Speaker10</h3>
+              </header>
+              <div class="modal-content">
+                <div class="wiad-speaker-info">
+                  <div class="wiad-speaker-bio" itemprop="description">
+                      <p class="default-paragraph wiad-speaker-bio__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+                  </div>
+                </div>
+              </div>
+              <footer>
+                <ul class="wiad-speaker-links-container">
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor twitter" href="//twitter.com/speakerstwitter" title="Twitter of Speaker">Twitter</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor github" href="//github.com/speakersgithub" title="GitHub of Speaker">GitHub</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor Linkedin" href="//mx.linkedin.com/in/" title="Linkedin of Speaker">Linkedin</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor slideshare" href="//github.com/speakersgithub" title="SlideShare of Speaker">SlideShare</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor speakerdeck" href="//github.com/speakersgithub" title="SpeakerDeck of Speaker">SpeakerDeck</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor dribble" href="//github.com/speakersgithub" title="Dribble of Speaker">Dribble</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor behance" href="//github.com/speakersgithub" title="Behance of Speaker">Behance</a>
+                  </li>
+                </ul>
+              </footer>
+          </div>
+          <a href="#!" class="modal-close" title="Close this modal" data-close="Close" data-dismiss="modal">?</a>
+        </section>
+        <!-- END LIGHTNING #4 -->
+        <!-- LIGHTNING #5 -->
+        <section class="modal--show" id="speaker11" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+          <div class="modal-inner" itemprop="performer" itemscope="" itemtype="http://schema.org/Person" data-order="11">
+              <header id="modal-label11">
+                <h3 class="wiad-speaker-info__name default-text" itemprop="name">Speaker11</h3>
+              </header>
+              <div class="modal-content">
+                <div class="wiad-speaker-info">
+                  <div class="wiad-speaker-bio" itemprop="description">
+                      <p class="default-paragraph wiad-speaker-bio__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+                  </div>
+                </div>
+              </div>
+              <footer>
+                <ul class="wiad-speaker-links-container">
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor twitter" href="//twitter.com/speakerstwitter" title="Twitter of Speaker">Twitter</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor github" href="//github.com/speakersgithub" title="GitHub of Speaker">GitHub</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor Linkedin" href="//mx.linkedin.com/in/" title="Linkedin of Speaker">Linkedin</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor slideshare" href="//github.com/speakersgithub" title="SlideShare of Speaker">SlideShare</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor speakerdeck" href="//github.com/speakersgithub" title="SpeakerDeck of Speaker">SpeakerDeck</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor dribble" href="//github.com/speakersgithub" title="Dribble of Speaker">Dribble</a>
+                  </li>
+                  <li class="wiad-speaker-links-container__item">
+                      <a class="wiad-speaker-links-container__anchor behance" href="//github.com/speakersgithub" title="Behance of Speaker">Behance</a>
+                  </li>
+                </ul>
+              </footer>
+          </div>
+          <a href="#!" class="modal-close" title="Close this modal" data-close="Close" data-dismiss="modal">?</a>
+        </section>
+        <!-- END LIGHTNING #5 -->
+        
+      </section>
       <!--Overlay-->
     </main>
     <footer>
+      <div class="broughtby"><a href="//www.ibm.com/design/studio.shtml"><img src="images/studio-mx-logo.png" width="60" height="60" alt="IBM Studio Mexico design logo" border="0"></a></div>
       <nav class="navdrawer-container promote-layer">
         <h4>Navigation</h4>
         <ul>
@@ -690,7 +1041,6 @@ call this one when english language
           <li><a href="#tickets">Tickets</a></li>
         </ul>
       </nav>
-      <div class="broughtby"><a href="//www.ibm.com/design/studio.shtml"><img src="images/studio-mx-logo.png" width="60" height="60" alt="IBM Studio Mexico design logo" border="0"></a></div>
     </footer>
 
     <script type="text/javascript"
@@ -698,6 +1048,7 @@ call this one when english language
     </script>
     <!-- build:js scripts/main.min.js -->
     <script src="scripts/main.js"></script>
+    <script src="scripts/modal.js"></script>
     <script type="text/javascript" src="scripts/jssor.js"></script>
     <script type="text/javascript" src="scripts/jssor.slider.mini.js"></script>
     <!-- Trigger -->

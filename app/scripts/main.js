@@ -20,11 +20,14 @@
   'use strict';
 
   var querySelector = document.querySelector.bind(document);
+  var querySelectorAll = document.querySelectorAll.bind(document);
 
   var navdrawerContainer = querySelector('.navdrawer-container');
+  var speakDetailsContainer = querySelectorAll('.tracks-about');
   var body = document.body;
   var appbarElement = querySelector('.app-bar');
   var menuBtn = querySelector('.menu');
+  var speechBtn = querySelector('.speech-container');
   var main = querySelector('main');
 
   function closeMenu() {
@@ -40,6 +43,9 @@
     navdrawerContainer.classList.add('opened');
   }
 
+  function toggleItem() {
+    speakDetailsContainer.classList.toggle('opened');
+  }
   
   
   //gMaps
@@ -80,6 +86,7 @@
 
   main.addEventListener('click', closeMenu);
   menuBtn.addEventListener('click', toggleMenu);
+  speechBtn.addEventListener('click', toggleItem);
   navdrawerContainer.addEventListener('click', function (event) {
     if (event.target.nodeName === 'A' || event.target.nodeName === 'LI') {
       closeMenu();
