@@ -682,6 +682,10 @@ ul.wiad-speaker-list {
   .jssora05rdn { background-position: -310px -40px; }
 /*JSSor*/
 
+.icon-bullet:before, ul li:before, ul.list-links a:before, .list-anchor a:before {
+  content: "";
+}
+
 @font-face {
   font-family: 'Oswald Light';
   font-style: normal;

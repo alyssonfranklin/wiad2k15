@@ -3,7 +3,7 @@
 
 # TEAM
 
-  <name> -- <role> -- <twitter>
+  Alysson Franklin Martins Moreira -- UX Lead -- http://twitter.com/alyssonfranklin
 
 # THANKS
 
@@ -11,4 +11,4 @@
 
 # TECHNOLOGY COLOPHON
 
-  HTML5, CSS3
+  HTML5, CSS3, JAVASCRIPT, SHELLSCRIPT
