@@ -30,6 +30,7 @@
 */
 
 /*! Jssor */
+/* jshint ignore:start */
 
 //$JssorDebug$
 var $JssorDebug$ = new function () {
@@ -2848,3 +2849,4 @@ function $JssorPlayerClass$() {
         });
     };
 }
+/* jshint ignore:end */

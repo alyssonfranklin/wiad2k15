@@ -181,8 +181,8 @@ gulp.task('pagespeed', pagespeed.bind(null, {
   // By default, we use the PageSpeed Insights
   // free (no API key) tier. You can use a Google
   // Developer API key if you have one. See
-  // http://goo.gl/RkN0vE for info key: 'YOUR_API_KEY'
-  url: 'https://example.com',
+  // http://goo.gl/RkN0vE for info key: 'AIzaSyDHDRNSuFXOIboz8dNTo56EA88T7Fr_atE'
+  url: 'https://wiadcdmx.org/dist/',
   strategy: 'mobile'
 }));
 
