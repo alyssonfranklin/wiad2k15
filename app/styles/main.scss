@@ -77,16 +77,21 @@ body.open {
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  font-size: 2em;
   line-height: 60px;
-  margin: 10px 0;
+  margin: 10px 25%;
   padding: 0;
-  color: #fefefe;
   float: none;
   max-width: none;
-  font-weight: 300;
-  display: initial;
+
+  display: block;
+  overflow: hidden;
+  text-align: left;
+  text-indent: -9999px;
+  width: 70px;
+  height: 45px;
+  background: url(../images/wiad2015-mobile.png) no-repeat;
 }
+
 
 .app-bar .logo a {
   text-decoration: none;
