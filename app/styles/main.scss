@@ -510,8 +510,9 @@ ul.wiad-speaker-list {
       p {
         padding-top: 0;
       }
-      strong {
+      .wiad-speaker-company {
        padding: 0 13px; 
+       font-size: 0.65em;
       }
     }
     .wiad-speaker-card:hover {
@@ -553,6 +554,7 @@ ul.wiad-speaker-list {
     padding: 0;
     line-height: 130px;
     font-size: 46px;*/
+    margin: 10px 0;
     display: block;
     overflow: hidden;
     text-align: left;

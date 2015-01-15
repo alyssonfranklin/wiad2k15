@@ -36,7 +36,7 @@
       </div>
     </header>
 
-    <nav class="navdrawer-container promote-layer">
+    <nav class="navdrawer-container promote-layer" id="sticky">
       <h4>Navigation</h4>
       <ul>
         <li><a href="#about">About</a></li>
@@ -48,7 +48,7 @@
       </ul>
     </nav>
 
-    <main>
+    <main id="fluid">
       <h1>Hola!</h1>
       <!---->
       <section class="section wiad-abt-container">
@@ -104,7 +104,7 @@
                     <tr class="track-container">
                         <th scope="row"><em class="track-time">09:20</em></th>
                         <td class="speech-container"><span class="keynote"></span>
-                            <div class="track-expand track-speaker">Speaker 1</div>
+                            <div class="track-expand track-speaker">Victor M. Gonzalez</div>
                             <strong class="track-title">Presentation title</strong>
                             <div class="tracks-about">
                               <p class="track-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -114,7 +114,7 @@
                     <tr class="track-container">
                         <th scope="row"><em class="track-time">10:20</em></th>
                         <td class="speech-container"><span class="keynote"></span>
-                            <div class="track-expand track-speaker">Speaker 2</div>
+                            <div class="track-expand track-speaker">Juan Manuel G. Calleros</div>
                             <strong class="track-title">Presentation title</strong>
                             <div class="tracks-about">
                               <p class="track-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -140,7 +140,7 @@
                     <tr class="track-container">
                         <th scope="row"><em class="track-time">12:00</em></th>
                         <td class="speech-container"><span class="keynote"></span>
-                            <div class="track-expand track-speaker">Speaker 3</div>
+                            <div class="track-expand track-speaker">Jorge Sanchez Barcelo</div>
                             <strong class="track-title">Presentation title</strong>
                             <div class="tracks-about">
                               <p class="track-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -186,7 +186,7 @@
                     <tr class="track-container">
                         <th scope="row"><em class="track-time">16:20</em></th>
                         <td class="speech-container"><span class="keynote"></span>
-                            <div class="track-expand track-speaker">Speaker 4</div>
+                            <div class="track-expand track-speaker">Alfredo Sanchéz</div>
                             <strong class="track-title">Presentation title</strong>
                             <div class="tracks-about">
                               <p class="track-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -343,42 +343,42 @@
         <p>Nuestros oradores están desarrollando trabajo relevante sobre la Ciudad de México, UX y Arquitectura de Información. A lo largo de todo el día estarás en contacto con algunos de los más aclamados profesionales en temas de Arquitectura de Información y Experiencia de Usuario en México.</p>
         <ul class="wiad-speaker-list">
           <li>
-            <a data-layer="1" class="wiad-speaker-card" href="#speaker1" title="More abt speaker#1">
-              <img class="wiad-speaker-photo" src="images/speakers/speaker2-conc-left.jpg" alt="Image of speaker#1" width="260" height="134">
-              <h3 class="default-text wiad-speaker-name">Speaker</h3>
-              <p><strong class="wiad-speaker-company">TBD</strong></p>
-              <span class="wiad-speaker-country wiad-speaker-country-usa">Estados Unidos</span>
-            </a>
-          </li>
-          <li>
-            <a data-layer="2" class="wiad-speaker-card" href="#speaker2" title="More abt speaker#2">
-              <img class="wiad-speaker-photo" src="images/speakers/speaker2-conc-right.jpg" alt="Image of speaker#2" width="260" height="134">
-              <h3 class="default-text wiad-speaker-name">Alysson  Martins</h3>
-              <p><strong class="wiad-speaker-company">IBM</strong></p>
-              <span class="wiad-speaker-country wiad-speaker-country-brazil">Brasil</span>
-            </a>
-          </li>
-          <!--<li>
-            <a data-layer="3" class="wiad-speaker-card" href="#speaker3" title="More abt speaker#3">
-              <img class="wiad-speaker-photo" src="images/speakers/speaker2-conc-left.jpg" alt="Image of speaker#3" width="260" height="134">
-              <h3 class="default-text wiad-speaker-name">Alfredo Sanchez</h3>
-              <p><strong class="wiad-speaker-company">UDLAP</strong></p>
+            <a data-layer="1" class="wiad-speaker-card" href="#victor" title="More abt Victor M. Gonzalez">
+              <img class="wiad-speaker-photo" src="images/speakers/victor_gonzalez.jpg" alt="Image of Victor M. Gonzalez" width="260" height="134">
+              <h3 class="default-text wiad-speaker-name">Victor M. Gonzalez</h3>
+              <p><span class="wiad-speaker-company">Instituto Tecnologico Autonomo de México</span></p>
               <span class="wiad-speaker-country wiad-speaker-country-mexico">México</span>
             </a>
           </li>
           <li>
-            <a data-layer="4" class="wiad-speaker-card" href="#speaker4" title="More abt speaker#4">
-              <img class="wiad-speaker-photo" src="images/speakers/speaker2-conc-right.jpg" alt="Image of speaker#4" width="260" height="134">
-              <h3 class="default-text wiad-speaker-name">Speaker</h3>
-              <p><strong class="wiad-speaker-company">TBD</strong></p>
-              <span class="wiad-speaker-country wiad-speaker-country-argentina">Argentina</span>
+            <a data-layer="2" class="wiad-speaker-card" href="#jorge" title="More abt Jorge Sanchez Barcelo">
+              <img class="wiad-speaker-photo" src="images/speakers/jorge_barcelo.jpg" alt="Image of Jorge Sanchez Barcelo" width="260" height="134">
+              <h3 class="default-text wiad-speaker-name">Jorge Sanchez Barcelo</h3>
+              <p><span class="wiad-speaker-company">Banorte</span></p>
+              <span class="wiad-speaker-country wiad-speaker-country-mexico">México</span>
+            </a>
+          </li>
+          <li>
+            <a data-layer="3" class="wiad-speaker-card" href="#alfredo" title="More abt Alfredo Sánchez">
+              <img class="wiad-speaker-photo" src="images/speakers/alfredo_sanchez.jpg" alt="Image of Alfredo Sánchez" width="260" height="134">
+              <h3 class="default-text wiad-speaker-name">Alfredo Sánchez</h3>
+              <p><span class="wiad-speaker-company">Universidad de las Américas Puebla</span></p>
+              <span class="wiad-speaker-country wiad-speaker-country-mexico">México</span>
+            </a>
+          </li>
+          <li>
+            <a data-layer="4" class="wiad-speaker-card" href="#juan" title="More abt Juan Manuel Calleros">
+              <img class="wiad-speaker-photo" src="images/speakers/juan_calleros.jpg" alt="Image of Juan Manuel Calleros" width="260" height="134">
+              <h3 class="default-text wiad-speaker-name">Juan Manuel Calleros</h3>
+              <p><span class="wiad-speaker-company">Université Catholique de Louvain</span></p>
+              <span class="wiad-speaker-country wiad-speaker-country-mexico">México</span>
             </a>
           </li>
           <li>
             <a data-layer="5" class="wiad-speaker-card" href="#speaker5" title="More abt speaker#5">
               <img class="wiad-speaker-photo" src="images/speakers/speaker2-conc-left.jpg" alt="Image of speaker#5" width="260" height="134">
               <h3 class="default-text wiad-speaker-name">Speaker</h3>
-              <p><strong class="wiad-speaker-company">TBD</strong></p>
+              <p><span class="wiad-speaker-company">TBD</span></p>
               <span class="wiad-speaker-country wiad-speaker-country-mexico">México</span>
             </a>
           </li>
@@ -386,10 +386,10 @@
             <a data-layer="6" class="wiad-speaker-card" href="#speaker6" title="More abt speaker#6">
               <img class="wiad-speaker-photo" src="images/speakers/speaker2-conc-right.jpg" alt="Image of speaker#6" width="260" height="134">
               <h3 class="default-text wiad-speaker-name">Speaker</h3>
-              <p><strong class="wiad-speaker-company">TBD</strong></p>
+              <p><span class="wiad-speaker-company">TBD</span></p>
               <span class="wiad-speaker-country wiad-speaker-country-mexico">Mexico</span>
             </a>
-          </li>-->
+          </li>
         </ul>
       </section>
       <!---->
@@ -513,40 +513,41 @@
       <!--Overlay-->
       <section class="wiad-overlay-container speakers-overlay-container">
         <!-- SPEAKER #1 -->
-        <section class="modal--show" id="speaker1" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+        <section class="modal--show" id="victor" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
           <div class="modal-inner" itemprop="performer" itemscope="" itemtype="http://schema.org/Person" data-order="1">
               <header id="modal-label1">
-                <h3 class="wiad-speaker-info__name default-text" itemprop="name">Speaker1</h3>
+                <h3 class="wiad-speaker-info__name default-text" itemprop="name">Victor M. Gonzalez</h3>
               </header>
               <div class="modal-content">
                 <div class="wiad-speaker-info">
                   <div class="wiad-speaker-bio" itemprop="description">
-                      <p class="default-paragraph wiad-speaker-bio__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+                  <img src="images/speakers/bio_victor_gonzalez.jpg" width="250" height="150" alt="Victor M. Gonzalez picture" itemprop="image">
+                      <p class="default-paragraph wiad-speaker-bio__info">Head of Department &amp; Research en Instituto Tecnologico Autonomo de Mexico. Profesor de UX, Usability, Design of Interactive Systems, y Management of Information Technology.</p>
                   </div>
                 </div>
               </div>
               <footer>
                 <ul class="wiad-speaker-links-container">
                   <li class="wiad-speaker-links-container__item">
-                      <a class="wiad-speaker-links-container__anchor twitter" href="//twitter.com/speakerstwitter" title="Twitter of Speaker">Twitter</a>
+                      <a class="wiad-speaker-links-container__anchor twitter" href="//twitter.com/speakerstwitter" title="Mi Twitter">Twitter</a>
                   </li>
                   <li class="wiad-speaker-links-container__item">
-                      <a class="wiad-speaker-links-container__anchor github" href="//github.com/speakersgithub" title="GitHub of Speaker">GitHub</a>
+                      <a class="wiad-speaker-links-container__anchor github" href="//github.com/speakersgithub" title="Mi GitHub">GitHub</a>
                   </li>
                   <li class="wiad-speaker-links-container__item">
-                      <a class="wiad-speaker-links-container__anchor Linkedin" href="//mx.linkedin.com/in/" title="Linkedin of Speaker">Linkedin</a>
+                      <a class="wiad-speaker-links-container__anchor Linkedin" href="//mx.linkedin.com/pub/victor-m-gonzalez/2/935/b47" title="Mi Linkedin">Linkedin</a>
                   </li>
                   <li class="wiad-speaker-links-container__item">
-                      <a class="wiad-speaker-links-container__anchor slideshare" href="//github.com/speakersgithub" title="SlideShare of Speaker">SlideShare</a>
+                      <a class="wiad-speaker-links-container__anchor slideshare" href="//github.com/speakersgithub" title="Mi SlideShare">SlideShare</a>
                   </li>
                   <li class="wiad-speaker-links-container__item">
-                      <a class="wiad-speaker-links-container__anchor speakerdeck" href="//github.com/speakersgithub" title="SpeakerDeck of Speaker">SpeakerDeck</a>
+                      <a class="wiad-speaker-links-container__anchor speakerdeck" href="//github.com/speakersgithub" title="Mi SpeakerDeck">SpeakerDeck</a>
                   </li>
                   <li class="wiad-speaker-links-container__item">
-                      <a class="wiad-speaker-links-container__anchor dribble" href="//github.com/speakersgithub" title="Dribble of Speaker">Dribble</a>
+                      <a class="wiad-speaker-links-container__anchor dribble" href="//github.com/speakersgithub" title="Mi Dribble">Dribble</a>
                   </li>
                   <li class="wiad-speaker-links-container__item">
-                      <a class="wiad-speaker-links-container__anchor behance" href="//github.com/speakersgithub" title="Behance of Speaker">Behance</a>
+                      <a class="wiad-speaker-links-container__anchor behance" href="//github.com/speakersgithub" title="Mi Behance">Behance</a>
                   </li>
                 </ul>
               </footer>
@@ -555,41 +556,41 @@
         </section>
         <!-- END SPEAKER #1 -->
         <!-- SPEAKER #2 -->
-        <section class="modal--show" id="speaker2" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+        <section class="modal--show" id="jorge" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
           <div class="modal-inner" itemprop="performer" itemscope="" itemtype="http://schema.org/Person" data-order="2">
               <header id="modal-label2">
-                <h3 class="wiad-speaker-info__name default-text" itemprop="name">Alysson Franklin</h3>
+                <h3 class="wiad-speaker-info__name default-text" itemprop="name">Jorge Sanchez Barcelo</h3>
               </header>
               <div class="modal-content">
                 <div class="wiad-speaker-info">
                   <div class="wiad-speaker-bio" itemprop="description">
-                      <img src="images/speakers/alysson.jpg" width="250" height="150" alt="Alysson Franklin Martins Moreira picture" itemprop="image">
-                      <p class="default-paragraph wiad-speaker-bio__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+                      <img src="images/speakers/bio_jorge_barcelo.jpg" width="250" height="150" alt="Jorge Sanchez Barcelo picture" itemprop="image">
+                      <p class="default-paragraph wiad-speaker-bio__info">Director de Transformación End to End en Banorte. Jorge es el Director del mayor proyecto de Transformación de Banca Electronica y Movil del mundo.</p>
                   </div>
                 </div>
               </div>
               <footer>
                 <ul class="wiad-speaker-links-container">
                   <li class="wiad-speaker-links-container__item">
-                      <a class="wiad-speaker-links-container__anchor twitter" href="//twitter.com/alyssonfranklin" title="Twitter of Alysson Franklin">Twitter</a>
+                      <a class="wiad-speaker-links-container__anchor twitter" href="//twitter.com/kokysanchez" title="Mi Twitter">Twitter</a>
                   </li>
                   <li class="wiad-speaker-links-container__item">
-                      <a class="wiad-speaker-links-container__anchor github" href="//github.com/alyssonfranklin" title="GitHub of Alysson Franklin">GitHub</a>
+                      <a class="wiad-speaker-links-container__anchor github" href="//github.com/speakersgithub" title="Mi GitHub">GitHub</a>
                   </li>
                   <li class="wiad-speaker-links-container__item">
-                      <a class="wiad-speaker-links-container__anchor Linkedin" href="//mx.linkedin.com/in/alyssonfrk/" title="Linkedin of Alysson Franklin">Linkedin</a>
+                      <a class="wiad-speaker-links-container__anchor Linkedin" href="//mx.linkedin.com/pub/jorge-sanchez-barcelo/2b/a78/344/en" title="Mi Linkedin">Linkedin</a>
                   </li>
                   <li class="wiad-speaker-links-container__item">
-                      <a class="wiad-speaker-links-container__anchor slideshare" href="//github.com/speakersgithub" title="SlideShare of Alysson Franklin">SlideShare</a>
+                      <a class="wiad-speaker-links-container__anchor slideshare" href="//github.com/speakersgithub" title="Mi SlideShare">SlideShare</a>
                   </li>
                   <li class="wiad-speaker-links-container__item">
-                      <a class="wiad-speaker-links-container__anchor speakerdeck" href="//github.com/speakersgithub" title="SpeakerDeck of Alysson Franklin">SpeakerDeck</a>
+                      <a class="wiad-speaker-links-container__anchor speakerdeck" href="//github.com/speakersgithub" title="Mi SpeakerDeck">SpeakerDeck</a>
                   </li>
                   <li class="wiad-speaker-links-container__item">
-                      <a class="wiad-speaker-links-container__anchor dribble" href="//github.com/speakersgithub" title="Dribble of Alysson Franklin">Dribble</a>
+                      <a class="wiad-speaker-links-container__anchor dribble" href="//github.com/speakersgithub" title="Mi Dribble">Dribble</a>
                   </li>
                   <li class="wiad-speaker-links-container__item">
-                      <a class="wiad-speaker-links-container__anchor behance" href="//github.com/speakersgithub" title="Behance of Alysson Franklin">Behance</a>
+                      <a class="wiad-speaker-links-container__anchor behance" href="//github.com/speakersgithub" title="Mi Behance">Behance</a>
                   </li>
                 </ul>
               </footer>
@@ -598,40 +599,41 @@
         </section>
         <!-- END SPEAKER #2 -->
         <!-- SPEAKER #3 -->
-        <section class="modal--show" id="speaker3" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+        <section class="modal--show" id="alfredo" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
           <div class="modal-inner" itemprop="performer" itemscope="" itemtype="http://schema.org/Person" data-order="3">
               <header id="modal-label3">
-                <h3 class="wiad-speaker-info__name default-text" itemprop="name">Speaker3</h3>
+                <h3 class="wiad-speaker-info__name default-text" itemprop="name">Alfredo Sánchez</h3>
               </header>
               <div class="modal-content">
                 <div class="wiad-speaker-info">
                   <div class="wiad-speaker-bio" itemprop="description">
-                      <p class="default-paragraph wiad-speaker-bio__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+                  <img src="images/speakers/bio_alfredo_sanchez.jpg" width="250" height="150" alt="Alfredo Sánchez picture" itemprop="image">
+                      <p class="default-paragraph wiad-speaker-bio__info">Director del Laboratorio de Tecnologias de Interacción y Cooperación en la Universidad de Las Americas de Puebla</p>
                   </div>
                 </div>
               </div>
               <footer>
                 <ul class="wiad-speaker-links-container">
                   <li class="wiad-speaker-links-container__item">
-                      <a class="wiad-speaker-links-container__anchor twitter" href="//twitter.com/speakerstwitter" title="Twitter of Speaker">Twitter</a>
+                      <a class="wiad-speaker-links-container__anchor twitter" href="//twitter.com/jalfredosanchez" title="Mi Twitter">Twitter</a>
                   </li>
                   <li class="wiad-speaker-links-container__item">
-                      <a class="wiad-speaker-links-container__anchor github" href="//github.com/speakersgithub" title="GitHub of Speaker">GitHub</a>
+                      <a class="wiad-speaker-links-container__anchor github" href="//github.com/speakersgithub" title="Mi GitHub">GitHub</a>
                   </li>
                   <li class="wiad-speaker-links-container__item">
-                      <a class="wiad-speaker-links-container__anchor Linkedin" href="//mx.linkedin.com/in/" title="Linkedin of Speaker">Linkedin</a>
+                      <a class="wiad-speaker-links-container__anchor Linkedin" href="//mx.linkedin.com/in/jalfredosanchez" title="Mi Linkedin">Linkedin</a>
                   </li>
                   <li class="wiad-speaker-links-container__item">
-                      <a class="wiad-speaker-links-container__anchor slideshare" href="//github.com/speakersgithub" title="SlideShare of Speaker">SlideShare</a>
+                      <a class="wiad-speaker-links-container__anchor slideshare" href="//github.com/speakersgithub" title="Mi SlideShare">SlideShare</a>
                   </li>
                   <li class="wiad-speaker-links-container__item">
-                      <a class="wiad-speaker-links-container__anchor speakerdeck" href="//github.com/speakersgithub" title="SpeakerDeck of Speaker">SpeakerDeck</a>
+                      <a class="wiad-speaker-links-container__anchor speakerdeck" href="//github.com/speakersgithub" title="Mi SpeakerDeck">SpeakerDeck</a>
                   </li>
                   <li class="wiad-speaker-links-container__item">
-                      <a class="wiad-speaker-links-container__anchor dribble" href="//github.com/speakersgithub" title="Dribble of Speaker">Dribble</a>
+                      <a class="wiad-speaker-links-container__anchor dribble" href="//github.com/speakersgithub" title="Mi Dribble">Dribble</a>
                   </li>
                   <li class="wiad-speaker-links-container__item">
-                      <a class="wiad-speaker-links-container__anchor behance" href="//github.com/speakersgithub" title="Behance of Speaker">Behance</a>
+                      <a class="wiad-speaker-links-container__anchor behance" href="//github.com/speakersgithub" title="Mi Behance">Behance</a>
                   </li>
                 </ul>
               </footer>
@@ -640,40 +642,41 @@
         </section>
         <!-- END SPEAKER #3 -->
         <!-- SPEAKER #4 -->
-        <section class="modal--show" id="speaker4" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+        <section class="modal--show" id="juan" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
           <div class="modal-inner" itemprop="performer" itemscope="" itemtype="http://schema.org/Person" data-order="4">
               <header id="modal-label4">
-                <h3 class="wiad-speaker-info__name default-text" itemprop="name">Speaker4</h3>
+                <h3 class="wiad-speaker-info__name default-text" itemprop="name">Juan Manuel Calleros</h3>
               </header>
               <div class="modal-content">
                 <div class="wiad-speaker-info">
                   <div class="wiad-speaker-bio" itemprop="description">
-                      <p class="default-paragraph wiad-speaker-bio__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+                  <img src="images/speakers/bio_juan_calleros.jpg" width="250" height="150" alt="Alfredo Sánchez picture" itemprop="image">
+                      <p class="default-paragraph wiad-speaker-bio__info">Professor Investigador de la Benemerita Universidad Autonoma de Puebla y Colaborador Cientifico de la Université Catholique de Louvain en Belgica.</p>
                   </div>
                 </div>
               </div>
               <footer>
                 <ul class="wiad-speaker-links-container">
                   <li class="wiad-speaker-links-container__item">
-                      <a class="wiad-speaker-links-container__anchor twitter" href="//twitter.com/speakerstwitter" title="Twitter of Speaker">Twitter</a>
+                      <a class="wiad-speaker-links-container__anchor twitter" href="//twitter.com/Juan__Gonzalez" title="Mi Twitter">Twitter</a>
                   </li>
                   <li class="wiad-speaker-links-container__item">
-                      <a class="wiad-speaker-links-container__anchor github" href="//github.com/speakersgithub" title="GitHub of Speaker">GitHub</a>
+                      <a class="wiad-speaker-links-container__anchor github" href="//github.com/speakersgithub" title="Mi GitHub">GitHub</a>
                   </li>
                   <li class="wiad-speaker-links-container__item">
-                      <a class="wiad-speaker-links-container__anchor Linkedin" href="//mx.linkedin.com/in/" title="Linkedin of Speaker">Linkedin</a>
+                      <a class="wiad-speaker-links-container__anchor Linkedin" href="//mx.linkedin.com/in/juangonzalezcalleros" title="Mi Linkedin">Linkedin</a>
                   </li>
                   <li class="wiad-speaker-links-container__item">
-                      <a class="wiad-speaker-links-container__anchor slideshare" href="//github.com/speakersgithub" title="SlideShare of Speaker">SlideShare</a>
+                      <a class="wiad-speaker-links-container__anchor slideshare" href="//github.com/speakersgithub" title="Mi SlideShare">SlideShare</a>
                   </li>
                   <li class="wiad-speaker-links-container__item">
-                      <a class="wiad-speaker-links-container__anchor speakerdeck" href="//github.com/speakersgithub" title="SpeakerDeck of Speaker">SpeakerDeck</a>
+                      <a class="wiad-speaker-links-container__anchor speakerdeck" href="//github.com/speakersgithub" title="Mi SpeakerDeck">SpeakerDeck</a>
                   </li>
                   <li class="wiad-speaker-links-container__item">
-                      <a class="wiad-speaker-links-container__anchor dribble" href="//github.com/speakersgithub" title="Dribble of Speaker">Dribble</a>
+                      <a class="wiad-speaker-links-container__anchor dribble" href="//github.com/speakersgithub" title="Mi Dribble">Dribble</a>
                   </li>
                   <li class="wiad-speaker-links-container__item">
-                      <a class="wiad-speaker-links-container__anchor behance" href="//github.com/speakersgithub" title="Behance of Speaker">Behance</a>
+                      <a class="wiad-speaker-links-container__anchor behance" href="//github.com/speakersgithub" title="Mi Behance">Behance</a>
                   </li>
                 </ul>
               </footer>
@@ -1005,7 +1008,7 @@
     <!-- Trigger -->
     <script>
     //JSSor
-  jssor_slider1_starter = function (containerId) {
+            jssor_slider1_starter = function (containerId) {
 
             var _SlideshowTransitions = [
             //Fade in L

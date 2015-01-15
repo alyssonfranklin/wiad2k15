@@ -22,6 +22,8 @@
   var querySelector = document.querySelector.bind(document);
   var querySelectorAll = document.querySelectorAll.bind(document);
 
+  var stickyContainer = document.getElementById("sticky");
+  var fluidContainer = document.getElementById("fluid");
   var navdrawerContainer = querySelector('.navdrawer-container');
   var speakDetailsContainer = querySelectorAll('.tracks-about');
   var body = document.body;
@@ -48,6 +50,29 @@
   }
   
   
+  //sticky
+  var stuck = false;
+  var stickPoint = getDistance();
+
+  function getDistance() {
+    var topDist = stickyContainer.offsetTop;
+    return topDist;
+  }
+
+  window.onscroll = function(e) {
+    var distance = getDistance() - window.pageYOffset;
+    var offset = window.pageYOffset;
+    fluidContainer.innerHTML = stickPoint + '   ' + distance + '   ' + offset + '   ' + stuck;
+    if ( (distance <= 0) && !stuck) {
+      stickyContainer.style.position = 'fixed';
+      stickyContainer.style.top = '0px';
+      stuck = true;
+    } else if (stuck && (offset <= stickPoint)){
+      stickyContainer.style.position = 'static';
+      stuck = false;
+    }
+  }
+
   //gMaps
       function initialize() {
         var myLatlng = new google.maps.LatLng(19.372090, -99.261421);
