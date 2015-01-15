@@ -15,7 +15,7 @@ table {
 
   th {
     text-align: center;
-    display: none;
+    //display: none;
     font-family: $fontHighlight;
     @include type--medium;
   }
@@ -36,11 +36,12 @@ table {
     padding-bottom: $lineHeight/2;
 
     // This is to re-plicate the table-headers for mobile
+    /*
     &::before {
-      content: attr(data-th) " :";
+      content: attr(data-th);
       display: inline-block;
       color: #ffffff;
-      background: $colorBlue;
+      background: $colorRed50;
       border-right: 2px solid #ffffff;
       position: absolute;
       top: 0;
@@ -58,12 +59,13 @@ table {
         display: none;
       }
     }
+    */
   }
 
   th,
   td {
     position: relative;
-    padding-left: 140px;
+
 
     @include medium {
       display: table-cell;

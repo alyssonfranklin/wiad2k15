@@ -49,7 +49,7 @@
     speakDetailsContainer.classList.toggle('opened');
   }
   
-  
+  /*
   //sticky
   var stuck = false;
   var stickPoint = getDistance();
@@ -72,7 +72,7 @@
       stuck = false;
     }
   }
-
+*/
   //gMaps
       function initialize() {
         var myLatlng = new google.maps.LatLng(19.372090, -99.261421);
