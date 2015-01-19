@@ -494,13 +494,14 @@ ul.wiad-speaker-list {
   }
   li {
     padding-left: 0;
+    display: inline;
+    width: 280px;
 
     .wiad-speaker-card {
       margin-bottom: 20px;
       display: inline-block;
       height: 230px;
       width: 100%;
-      float: left;
       margin-right: 15px;
       background-color: $colorRed100o;
       text-decoration: none;
@@ -535,6 +536,19 @@ ul.wiad-speaker-list {
 
 /** Larger Screens - desktops and tablets **/
 @media all and (min-width: 990px) {
+  html {
+  height:100%;
+    margin:0;
+    padding:0;
+  }
+  /*
+  #top-wrapper {
+    position: fixed;
+    height: 180px;
+    width: 100%;
+    box-shadow: 0 0 30px #000;
+  }
+  */
   .app-bar {
     position: relative;
     height: 120px;
@@ -548,7 +562,7 @@ ul.wiad-speaker-list {
 
   .app-bar-container {
     display: block;
-    height: 130px;
+    height: 110px;
     max-width: 864px;
     padding: 0 16px;
     box-sizing: border-box;
@@ -619,11 +633,23 @@ ul.wiad-speaker-list {
   }
 
   main {
-    max-width: 864px;
-    padding-top: 0;
+
+    padding: 0;
     min-height: initial;
   }
 
+.wiad-abt-container, 
+.wiad-agenda-container, 
+.wiad-speakers-container, 
+.wiad-location-container, 
+.wiad-tickets-container, 
+.wiad-sponsors-container {
+    max-width: 864px;
+    margin: 0 auto;
+}
+#wiad-tracks-container {
+  margin-bottom: 50px;
+}
   body {
     overflow-y: scroll;
   }

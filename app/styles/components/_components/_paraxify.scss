@@ -1,0 +1,68 @@
+.paraxify,
+%paraxify {
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+}
+.wiad-plax-container1, 
+.wiad-plax-container2, 
+.wiad-plax-container3, 
+.wiad-plax-container4, 
+.wiad-plax-container5, 
+.wiad-plax-container6 {
+	position: relative;
+	height: 100%;
+	min-height:900px;
+}
+
+.wiad-plax-container1 {
+	background: url(../images/fulls/01.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.wiad-plax-container2 {
+	background: url(../images/fulls/02.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.wiad-plax-container3 {
+	background: url(../images/fulls/03.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.wiad-plax-container4 {
+	background: url(../images/fulls/04.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.wiad-plax-container5 {
+	background: url(../images/fulls/05.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.wiad-plax-container6 {
+	background: url(../images/fulls/06.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.fullp-detail {
+	color: white;
+	background: #000;
+	padding:5px;
+	display: inline-block;
+	font-weight: bold;
+	position: static;
+}

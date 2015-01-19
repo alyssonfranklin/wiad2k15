@@ -25,38 +25,36 @@
     <link rel="stylesheet" href="styles/main.css">
   </head>
   <body onload="initializeMaps()">
-    <header class="app-bar promote-layer">
-      <div class="app-bar-container">
-        <button class="menu"><img src="images/hamburger.svg" alt="Menu"></button>
-        <h1 class="logo">World Information Architecture Day 2015 - Mexico City</h1>
-        <section class="app-bar-actions">
-        <!-- Put App Bar Buttons Here -->
-        <!-- e.g <button><i class="icon icon-star"></i></button> -->
-        </section>
-      </div>
-    </header>
-
-    <nav class="navdrawer-container promote-layer" id="sticky">
-      <h4>Navigation</h4>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#agenda">Agenda</a></li>
-        <li><a href="#speakers">Speakers</a></li>
-        <li><a href="#location">Location</a></li>
-        <li><a href="#tickets">Tickets</a></li>
-        <li><a href="#sponsors">Sponsors</a></li>
-      </ul>
-    </nav>
-
+    <section id="top-wrapper">
+        <header class="app-bar promote-layer">
+          <div class="app-bar-container">
+            <button class="menu"><img src="images/hamburger.svg" alt="Menu"></button>
+            <h1 class="logo">World Information Architecture Day 2015 - Mexico City</h1>
+          </div>
+        </header>
+        <nav class="navdrawer-container promote-layer" id="sticky">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#agenda">Agenda</a></li>
+            <li><a href="#speakers">Oradores</a></li>
+            <li><a href="#location">Ubicación</a></li>
+            <li><a href="#tickets">Tickets</a></li>
+            <li><a href="#sponsors">Patrocinadores</a></li>
+          </ul>
+        </nav>
+    </section>
     <main id="fluid">
-      <h1>Hola!</h1>
       <!---->
+      <section class="fullp wiad-plax-container1">
+          <span class="fullp-detail">Palacio de Bellas Artes</span>
+      </section>
       <section class="section wiad-abt-container">
-      <div class="event-countdown">
-        <iframe width="195" height="279" frameborder="0" src="https://www.eventbrite.com/countdown-widget?eid=15097931319" marginheight="0" marginwidth="0" scrolling="no" allowtransparency="true"></iframe>
-      </div>
-        <h2 id="about">Bienvenido a la Ciudad de México!</h2>
-        <p>Cuando la información es clara y considerado con el contexto en que lo necesitamos, hay una cierta alegría pacífica que lava sobre nosotros. Nos sentimos amados y cuidados. Ansiamos la sensación de que alguien considerado cuidadosamente nuestras necesidades y expectativas.</p>
+      <h2>Bienvenido a Ciudad de M&eacute;xico!</h2>
+        <div class="event-countdown">
+          <iframe width="195" height="450" frameborder="0" src="https://www.eventbrite.com/countdown-widget?eid=13339122675" marginheight="0" marginwidth="0" scrolling="no" allowtransparency="true"></iframe>
+        </div>
+        <p id="about">Cuando la información es clara y considerado con el contexto en que lo necesitamos, hay una cierta alegría pacífica que lava sobre nosotros. Nos sentimos amados y cuidados. Ansiamos la sensación de que alguien considerado cuidadosamente nuestras necesidades y expectativas.</p>
         <p>Nuestro mundo se hace cada vez más de la información, sin embargo, gran parte de esa información no es tan clara o accesibles, especialmente para aquellos a los que se destina. Las organizaciones por ahí parecen decir que quieren hacer sus usuarios felices, pero estan realmente cumpliendo esas promesas? ¿Quién realmente esta generando una arquitectura orientada a la felicidad?</p>
         <p>Por primera vez, El Día Mundial de Arquitectura de Información (WIAD) por sus siglas en inglés se organizará en la Ciudad de México y nos gustaría preguntar para toda la Ciudad de Mexico como estan todos haciendo eso.</p>
         <ul>
@@ -78,6 +76,9 @@
         <!--Twitter API what we tweet & What people said abt WIAD-->
       </section>
       <!---->
+      <section class="fullp wiad-plax-container2">
+          <span class="fullp-detail">Bosque de Chapultepec</span>
+      </section>
       <section class="section wiad-agenda-container">
         <h2 id="agenda">Agenda</h2>
         <h3>Temas principales</h3>
@@ -93,6 +94,9 @@
         </div>
       </section>
       <!---->
+      <section class="fullp wiad-plax-container3">
+          <span class="fullp-detail">Catedral Metropolitana</span>
+      </section>
       <section class="section wiad-speakers-container">
         <h2 id="speakers">Oradores</h2>
         <p>Nuestros oradores están desarrollando trabajo relevante sobre la Ciudad de México, UX y Arquitectura de Información. A lo largo de todo el día estarás en contacto con algunos de los más aclamados profesionales en temas de Arquitectura de Información y Experiencia de Usuario en México.</p>
@@ -129,11 +133,30 @@
               <span class="wiad-speaker-country wiad-speaker-country-mexico">México</span>
             </a>
           </li>
+          <li>
+            <a data-layer="5" class="wiad-speaker-card" href="#speaker5" title="More abt speaker#5">
+              <img class="wiad-speaker-photo" src="images/speakers/speaker2-conc-left.jpg" alt="Image of speaker#5" width="260" height="134">
+              <h3 class="default-text wiad-speaker-name">Speaker</h3>
+              <p><span class="wiad-speaker-company">TBD</span></p>
+              <span class="wiad-speaker-country wiad-speaker-country-mexico">México</span>
+            </a>
+          </li>
+          <li>
+            <a data-layer="6" class="wiad-speaker-card" href="#speaker6" title="More abt speaker#6">
+              <img class="wiad-speaker-photo" src="images/speakers/speaker2-conc-right.jpg" alt="Image of speaker#6" width="260" height="134">
+              <h3 class="default-text wiad-speaker-name">Speaker</h3>
+              <p><span class="wiad-speaker-company">TBD</span></p>
+              <span class="wiad-speaker-country wiad-speaker-country-mexico">Mexico</span>
+            </a>
+          </li>
         </ul>
       </section>
       <!---->
+      <section class="fullp wiad-plax-container4">
+          <span class="fullp-detail">Palacio Nacional</span>
+      </section>
       <section class="section wiad-location-container">
-        <h2 id="location">Location</h2>
+        <h2 id="location">Ubicación</h2>
         <p>IBM será nuestro primer lugar en México. <a href="//twitter.com/#WIAD" target="_blank">#WIAD</a> se realizará en el nuevo #IBMStudio, ¡Único en su clase en Latino América!</p>
         <div id="map_canvas" style="width:100%; height:400px; margin-bottom:20px;"></div>
         <div id="slider1_container" style="position: relative; top: 0px; left: 14px; width: 800px;
@@ -233,15 +256,21 @@
         <!--Add UX Calendar from UX BLABLABLA-->
       </section>
       <!---->
+      <section class="fullp wiad-plax-container5">
+          <span class="fullp-detail">Palacio Postal</span>
+      </section>
       <section class="section wiad-tickets-container">
         <h2 id="tickets">Tickets</h2>
         <div style="width:100%; text-align:left;" >
-          <iframe  src="https://eventbrite.com/tickets-external?eid=15097931319&ref=etckt" frameborder="0" height="214" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="no" allowtransparency="true"></iframe>
+          <iframe  src="https://eventbrite.com/tickets-external?eid=13339122675&ref=etckt" frameborder="0" height="214" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="no" allowtransparency="true"></iframe>
         </div>
       </section>
       <!---->
+      <section class="fullp wiad-plax-container6">
+          <span class="fullp-detail">El Ángel de la Independencia</span>
+      </section>
       <section class="section wiad-sponsors-container">
-        <h2 id="sponsors">Sponsors</h2>
+        <h2 id="sponsors">Patrocinadores</h2>
         <p>Este evento es traído a ti por <a href="//iainstitute.org/"><b>The Information Architecture Institute</b></a>, el <a href="//www.ibm.com/design/studio.shtml"><b>IBM Studio Mexico</b></a> ¡la irresistible fuerza de un <a href="//www.meetup.com/UX-in-MX/"><b>grupo de voluntarios</b></a>!</p>
         <div align="center" width="100%" style="background-color:white"><a href="http://iainstitute.org/"><img src="http://2015.worldiaday.org/img/iabanner.png" alt="The Information Architecture Institute banner" width="70%"></a></div>
         <div align="center" width="100%" style="background-color:white"><a href="//www.ibm.com/design/studio.shtml"><img src="images/ibm-studio-mx-banner.jpg" alt="IBM Studio MX Banner" width="400" height="79"></a></div>
@@ -663,12 +692,12 @@
       <nav class="navdrawer-container promote-layer">
         <h4>Navigation</h4>
         <ul>
-          <li><a href="#about">About</a></li>
+          <li><a href="#about">Sobre</a></li>
           <li><a href="#agenda">Agenda</a></li>
-          <li><a href="#speakers">Speakers</a></li>
-          <li><a href="#location">Location</a></li>
+          <li><a href="#speakers">Oradores</a></li>
+          <li><a href="#location">Ubicación</a></li>
           <li><a href="#tickets">Tickets</a></li>
-          <li><a href="#sponsors">Sponsors</a></li>
+          <li><a href="#sponsors">Patrocinadores</a></li>
         </ul>
       </nav>
     </footer>
@@ -679,10 +708,13 @@
     <!-- build:js scripts/main.min.js -->
     <script src="scripts/main.js"></script>
     <script src="scripts/modal.js"></script>
+    <script src="scripts/paraxify.min.js"></script>
     <script src="scripts/jssor.js"></script>
     <script src="scripts/jssor.slider.mini.js"></script>
     <!-- Trigger -->
     <script>
+    //parallax
+        myParaxify = paraxify('.fullp');
     //JSSor
             jssor_slider1_starter = function (containerId) {
 
