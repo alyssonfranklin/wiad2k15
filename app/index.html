@@ -25,25 +25,26 @@
     <link rel="stylesheet" href="styles/main.css">
   </head>
   <body onload="initializeMaps()">
-    <section id="top-wrapper">
-        <header class="app-bar promote-layer">
-          <div class="app-bar-container">
-            <button class="menu"><img src="images/hamburger.svg" alt="Menu"></button>
-            <h1 class="logo">World Information Architecture Day 2015 - Mexico City</h1>
-          </div>
-        </header>
-        <nav class="navdrawer-container promote-layer" id="sticky">
-          <h4>Navigation</h4>
-          <ul>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#agenda">Agenda</a></li>
-            <li><a href="#speakers">Oradores</a></li>
-            <li><a href="#location">Ubicación</a></li>
-            <li><a href="#tickets">Tickets</a></li>
-            <li><a href="#sponsors">Patrocinadores</a></li>
-          </ul>
-        </nav>
-    </section>
+    <header class="app-bar promote-layer">
+      <div class="app-bar-container">
+        <button class="menu"><img src="images/hamburger.svg" alt="Menu"></button>
+        <h1 class="logo">World Information Architecture Day 2015 - Mexico City</h1>
+        <span class="logo-globe">WIAD 2015 logo</span>
+      </div>
+    </header>
+    <nav class="navdrawer-container promote-layer" id="sticky">
+      
+      <h4>Navigation</h4>
+      <ul>
+        <li><a data-scroll data-options='{ "easing": "easeInQuad" }' href="#about">Sobre</a></li>
+        <li><a data-scroll data-options='{ "easing": "easeInQuad" }' href="#agenda">Agenda</a></li>
+        <li><a data-scroll data-options='{ "easing": "easeInQuad" }' href="#speakers">Oradores</a></li>
+        <li><a data-scroll data-options='{ "easing": "easeInQuad" }' href="#location">Ubicación</a></li>
+        <li><a data-scroll data-options='{ "easing": "easeInQuad" }' href="#tickets">Tickets</a></li>
+        <li><a data-scroll data-options='{ "easing": "easeInQuad" }' href="#sponsors">Patrocinadores</a></li>
+        <li><span class="navlogo">WIAD 2015 logo</span></li>
+      </ul>
+    </nav>
     <main id="fluid">
       <!---->
       <section class="fullp wiad-plax-container1">
@@ -51,9 +52,9 @@
       </section>
       <section class="section wiad-abt-container">
       <h2>Bienvenido a Ciudad de M&eacute;xico!</h2>
-        <div class="event-countdown">
-          <iframe width="195" height="450" frameborder="0" src="https://www.eventbrite.com/countdown-widget?eid=13339122675" marginheight="0" marginwidth="0" scrolling="no" allowtransparency="true"></iframe>
-        </div>
+        <!--<div class="event-countdown">
+          <iframe width="195" height="350" frameborder="0" src="https://www.eventbrite.com/countdown-widget?eid=13339122675" marginheight="0" marginwidth="0" scrolling="no" allowtransparency="true"></iframe>
+        </div>-->
         <p id="about">Cuando la información es clara y considerado con el contexto en que lo necesitamos, hay una cierta alegría pacífica que lava sobre nosotros. Nos sentimos amados y cuidados. Ansiamos la sensación de que alguien considerado cuidadosamente nuestras necesidades y expectativas.</p>
         <p>Nuestro mundo se hace cada vez más de la información, sin embargo, gran parte de esa información no es tan clara o accesibles, especialmente para aquellos a los que se destina. Las organizaciones por ahí parecen decir que quieren hacer sus usuarios felices, pero estan realmente cumpliendo esas promesas? ¿Quién realmente esta generando una arquitectura orientada a la felicidad?</p>
         <p>Por primera vez, El Día Mundial de Arquitectura de Información (WIAD) por sus siglas en inglés se organizará en la Ciudad de México y nos gustaría preguntar para toda la Ciudad de Mexico como estan todos haciendo eso.</p>
@@ -87,7 +88,7 @@
         <p>Para complementar los temas principales, 4 oradores tendrán 10 minutos cada uno para mostrar sus ideas y como éstas están cambiando la IA en nuestra comunidad. ¡La mejor idea tendrá oportunidad de ser presentada en 20 minutos!</p> 
 
         <p><a href="//en.wikipedia.org/wiki/Lightning_talk" target="_blank">¿Quisieras saber más acerca de Lightning y cómo funciona?</a></p>
-        <p><b>Quieres enviar tu ligthning talk?</b> <a href="//www.perl.com/pub/2004/07/30/lightningtalk.html" target="_blank">Ve cómo puedes crear el tuyo y envíalo usando esta liga antes del 25 de Enero. Los mejores</a> y <a href="//bit.ly/WIAD_CDMX" target="_blank">Ve cómo puedes crear el tuyo y envíalo usando esta liga antes del 25 de Enero. Los mejores</a>. Ve cómo puedes crear el tuyo y envíalo usando esta liga antes del 25 de Enero. Los mejores artículos tendrán la oportunidad de mostrar en un gran lugar que ¡tus ideas pueden cambiar a la Ciudad de México para mejor!</p>
+        <p><b>Quieres enviar tu ligthning talk?</b> <a href="//www.perl.com/pub/2004/07/30/lightningtalk.html" target="_blank">Ve cómo puedes crear el tuyo</a> y <a href="//bit.ly/WIAD_CDMX" target="_blank">envíalo usando esta liga antes del 25 de Enero</a>. Los mejores artículos tendrán la oportunidad de mostrar en un gran lugar que ¡tus ideas pueden cambiar a la Ciudad de México para mejor!</p>
 
         <div id="wiad-tracks-container" class="tracks-container">
             <h3>Nuestra agenda sera será anunciada en breve</h3>
@@ -118,15 +119,7 @@
             </a>
           </li>
           <li>
-            <a data-layer="3" class="wiad-speaker-card" href="#alfredo" title="More abt Alfredo Sánchez">
-              <img class="wiad-speaker-photo" src="images/speakers/alfredo_sanchez.jpg" alt="Image of Alfredo Sánchez" width="260" height="134">
-              <h3 class="default-text wiad-speaker-name">Alfredo Sánchez</h3>
-              <p><span class="wiad-speaker-company">Universidad de las Américas Puebla</span></p>
-              <span class="wiad-speaker-country wiad-speaker-country-mexico">México</span>
-            </a>
-          </li>
-          <li>
-            <a data-layer="4" class="wiad-speaker-card" href="#juan" title="More abt Juan Manuel Calleros">
+            <a data-layer="3" class="wiad-speaker-card" href="#juan" title="More abt Juan Manuel Calleros">
               <img class="wiad-speaker-photo" src="images/speakers/juan_calleros.jpg" alt="Image of Juan Manuel Calleros" width="260" height="134">
               <h3 class="default-text wiad-speaker-name">Juan Manuel Calleros</h3>
               <p><span class="wiad-speaker-company">Université Catholique de Louvain</span></p>
@@ -134,22 +127,31 @@
             </a>
           </li>
           <li>
+            <a data-layer="4" class="wiad-speaker-card" href="#speaker5" title="More abt speaker#5">
+              <img class="wiad-speaker-photo" src="images/speakers/speaker2-conc-left.jpg" alt="Image of speaker#4" width="260" height="134">
+              <h3 class="default-text wiad-speaker-name">Nuestro Orador #4</h3>
+              <p><span class="wiad-speaker-company">TBD</span></p>
+              <span class="wiad-speaker-country wiad-speaker-country-where">TBD</span>
+            </a>
+          </li>
+          <li>
             <a data-layer="5" class="wiad-speaker-card" href="#speaker5" title="More abt speaker#5">
               <img class="wiad-speaker-photo" src="images/speakers/speaker2-conc-left.jpg" alt="Image of speaker#5" width="260" height="134">
-              <h3 class="default-text wiad-speaker-name">Speaker</h3>
+              <h3 class="default-text wiad-speaker-name">Nuestro Orador #5</h3>
               <p><span class="wiad-speaker-company">TBD</span></p>
-              <span class="wiad-speaker-country wiad-speaker-country-mexico">México</span>
+              <span class="wiad-speaker-country wiad-speaker-country-where">TBD</span>
             </a>
           </li>
           <li>
             <a data-layer="6" class="wiad-speaker-card" href="#speaker6" title="More abt speaker#6">
               <img class="wiad-speaker-photo" src="images/speakers/speaker2-conc-right.jpg" alt="Image of speaker#6" width="260" height="134">
-              <h3 class="default-text wiad-speaker-name">Speaker</h3>
+              <h3 class="default-text wiad-speaker-name">Nuestro Orador #6</h3>
               <p><span class="wiad-speaker-company">TBD</span></p>
-              <span class="wiad-speaker-country wiad-speaker-country-mexico">Mexico</span>
+              <span class="wiad-speaker-country wiad-speaker-country-where">TBD</span>
             </a>
           </li>
         </ul>
+        <h3>Los seleccionados para las lightning talks serán conocidos en el dia 1 de febrero!</h3>
       </section>
       <!---->
       <section class="fullp wiad-plax-container4">
@@ -253,7 +255,9 @@
               <!-- Thumbnail Item Skin End -->
           </div>
       </div>
-        <!--Add UX Calendar from UX BLABLABLA-->
+        <h3>World IA Day - Mexico City</h3>
+        <p>21 de febrero de 2015 a las 08:00</p>
+        <p>IBM Studio MX - Alfonso Nápoles Gándara 3111 - Zedec Santa Fe, Álvaro Obregón - Ciudad de México, 01210 - México </p>
       </section>
       <!---->
       <section class="fullp wiad-plax-container5">
@@ -393,12 +397,12 @@
         <section class="modal--show" id="speaker5" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
           <div class="modal-inner" itemprop="performer" itemscope="" itemtype="http://schema.org/Person" data-order="5">
               <header id="modal-label5">
-                <h3 class="wiad-speaker-info__name default-text" itemprop="name">Speaker5</h3>
+                <h3 class="wiad-speaker-info__name default-text" itemprop="name">Nuestro Orador #5</h3>
               </header>
               <div class="modal-content">
                 <div class="wiad-speaker-info">
                   <div class="wiad-speaker-bio" itemprop="description">
-                      <p class="default-paragraph wiad-speaker-bio__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+                      <p class="default-paragraph wiad-speaker-bio__info">Esta semana vamos a revelar los oradores restantes.</p>
                   </div>
                 </div>
               </div>
@@ -435,12 +439,12 @@
         <section class="modal--show" id="speaker6" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
           <div class="modal-inner" itemprop="performer" itemscope="" itemtype="http://schema.org/Person" data-order="6">
               <header id="modal-label6">
-                <h3 class="wiad-speaker-info__name default-text" itemprop="name">Speaker6</h3>
+                <h3 class="wiad-speaker-info__name default-text" itemprop="name">Nuestro Orador #6</h3>
               </header>
               <div class="modal-content">
                 <div class="wiad-speaker-info">
                   <div class="wiad-speaker-bio" itemprop="description">
-                      <p class="default-paragraph wiad-speaker-bio__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+                      <p class="default-paragraph wiad-speaker-bio__info">Esta semana vamos a revelar los oradores restantes.</p>
                   </div>
                 </div>
               </div>
@@ -692,12 +696,12 @@
       <nav class="navdrawer-container promote-layer">
         <h4>Navigation</h4>
         <ul>
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#agenda">Agenda</a></li>
-          <li><a href="#speakers">Oradores</a></li>
-          <li><a href="#location">Ubicación</a></li>
-          <li><a href="#tickets">Tickets</a></li>
-          <li><a href="#sponsors">Patrocinadores</a></li>
+          <li><a data-scroll data-options='{ "easing": "easeInQuad" }' href="#about">Sobre</a></li>
+          <li><a data-scroll data-options='{ "easing": "easeInQuad" }' href="#agenda">Agenda</a></li>
+          <li><a data-scroll data-options='{ "easing": "easeInQuad" }' href="#speakers">Oradores</a></li>
+          <li><a data-scroll data-options='{ "easing": "easeInQuad" }' href="#location">Ubicación</a></li>
+          <li><a data-scroll data-options='{ "easing": "easeInQuad" }' href="#tickets">Tickets</a></li>
+          <li><a data-scroll data-options='{ "easing": "easeInQuad" }' href="#sponsors">Patrocinadores</a></li>
         </ul>
       </nav>
     </footer>
@@ -708,13 +712,30 @@
     <!-- build:js scripts/main.min.js -->
     <script src="scripts/main.js"></script>
     <script src="scripts/modal.js"></script>
-    <script src="scripts/paraxify.min.js"></script>
+    <script src="scripts/headhesive.min.js"></script>
+    <!--<script src="scripts/smooth-scroll.js"></script>
+    <script src="scripts/paraxify.min.js"></script>-->
     <script src="scripts/jssor.js"></script>
     <script src="scripts/jssor.slider.mini.js"></script>
     <!-- Trigger -->
     <script>
-    //parallax
-        myParaxify = paraxify('.fullp');
+    //smooth scrolling        smoothScroll.init();
+    //parallax        myParaxify = paraxify('.fullp');
+        // Set options
+        var options = {
+            offset: '#showHere',
+            classes: {
+                clone:   'banner--clone',
+                stick:   'banner--stick',
+                unstick: 'banner--unstick'
+            }
+        };
+
+        // Initialise with options
+        var banner = new Headhesive('#sticky', options);
+
+        // Headhesive destroy
+        // banner.destroy();
     //JSSor
             jssor_slider1_starter = function (containerId) {
 

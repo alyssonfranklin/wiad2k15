@@ -92,7 +92,6 @@ body.open {
   background: url(../images/wiad2015-mobile.png) no-repeat;
 }
 
-
 .app-bar .logo a {
   text-decoration: none;
   color: inherit;
@@ -473,7 +472,7 @@ header {
   @include flagsprite(0px, -46px, 45px, 68px)
 }
 
-.wiad-speaker-country-spain {
+.wiad-speaker-country-where {
   @include flagsprite(0px, -92px, 45px, 68px)
 }
 
@@ -519,7 +518,7 @@ ul.wiad-speaker-list {
       }
       .wiad-speaker-company {
        padding: 0 13px; 
-       font-size: 1em;
+       font-size: 0.65em;
       }
     }
     .wiad-speaker-card:hover {
@@ -533,7 +532,7 @@ ul.wiad-speaker-list {
     }
   }
 }
-
+.fullp-detail { display: none; }
 /** Larger Screens - desktops and tablets **/
 @media all and (min-width: 990px) {
   html {
@@ -541,6 +540,53 @@ ul.wiad-speaker-list {
     margin:0;
     padding:0;
   }
+    .navlogo {
+    display: block;
+    overflow: hidden;
+    text-align: left;
+    text-indent: -9999px;
+    width: 114px;
+    height: 45px;
+    background: url(../images/wiad2015-mobile.png) no-repeat;
+    display: none;
+    margin: 7px 0;
+  }
+
+  .banner--clone{
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    display: none;
+  }
+  .banner--stick{
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+    display: inline-block;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    height: 60px !important;
+    box-shadow: 5px 0 5px #333;
+    overflow-y: hidden !important;
+
+    ul {
+      li:last-child{
+        position: relative;
+        left: 100px;
+        background-color: $colorRed50;
+        padding-left:5px;
+        padding-right:5px;         
+      }
+    }
+    .navlogo {
+      display: inline-block;
+    }
+  }
+
   /*
   #top-wrapper {
     position: fixed;
@@ -549,6 +595,68 @@ ul.wiad-speaker-list {
     box-shadow: 0 0 30px #000;
   }
   */
+  .wiad-plax-container1, 
+  .wiad-plax-container2, 
+  .wiad-plax-container3, 
+  .wiad-plax-container4, 
+  .wiad-plax-container5, 
+  .wiad-plax-container6 {
+  position: relative;
+  height: 100%;
+  min-height:900px;
+  }
+
+  .wiad-plax-container1 {
+  background: url(../images/fulls/01.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .wiad-plax-container2 {
+  background: url(../images/fulls/02.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .wiad-plax-container3 {
+    background: url(../images/fulls/03.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+  }
+  .wiad-plax-container4 {
+    background: url(../images/fulls/04.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+  }
+  .wiad-plax-container5 {
+    background: url(../images/fulls/05.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+  }
+  .wiad-plax-container6 {
+    background: url(../images/fulls/06.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+  }
+
+  .fullp-detail {
+    color: white;
+    background: #000;
+    padding:5px;
+    display: inline-block;
+    font-weight: bold;
+    position: static;
+  }
   .app-bar {
     position: relative;
     height: 120px;
@@ -582,6 +690,26 @@ ul.wiad-speaker-list {
     width: 98px;
     height: 100px;
     background: url(../images/wiad2015.png) no-repeat;
+
+  }
+
+  .app-bar .logo-globe {
+    /*float: left;
+    margin: 0;
+    padding: 0;
+    line-height: 130px;
+    font-size: 46px;*/
+    margin: 10px 0;
+    display: block;
+    overflow: hidden;
+    text-align: left;
+    text-indent: -9999px;
+    width: 296px;
+    height: 100px;
+    background: url(../images/globe.png) no-repeat;
+    position: absolute;
+    top: -10px;
+    right: 0;
 
   }
 
@@ -638,20 +766,19 @@ ul.wiad-speaker-list {
     min-height: initial;
   }
 
-.wiad-abt-container, 
-.wiad-agenda-container, 
-.wiad-speakers-container, 
-.wiad-location-container, 
-.wiad-tickets-container, 
-.wiad-sponsors-container {
-    max-width: 864px;
-    margin: 0 auto;
-}
-#wiad-tracks-container {
-  margin-bottom: 50px;
-}
+  .wiad-abt-container, 
+  .wiad-agenda-container, 
+  .wiad-speakers-container, 
+  .wiad-location-container, 
+  .wiad-tickets-container, 
+  .wiad-sponsors-container {
+      max-width: 864px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+  }
+
   body {
-    overflow-y: scroll;
+    /*overflow-y: scroll;*/
   }
   ul.wiad-speaker-list {
     li {
