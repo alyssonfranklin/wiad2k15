@@ -47,34 +47,12 @@
     speakDetailsContainer.classList.toggle('opened');
   }
   
-  /*
-  //sticky
-  var stuck = false;
-  var stickPoint = getDistance();
-
-  function getDistance() {
-    var topDist = stickyContainer.offsetTop;
-    return topDist;
-  }
-
-  window.onscroll = function(e) {
-    var distance = getDistance() - window.pageYOffset;
-    var offset = window.pageYOffset;
-    fluidContainer.innerHTML = stickPoint + '   ' + distance + '   ' + offset + '   ' + stuck;
-    if ( (distance <= 0) && !stuck) {
-      stickyContainer.style.position = 'fixed';
-      stickyContainer.style.top = '0px';
-      stuck = true;
-    } else if (stuck && (offset <= stickPoint)){
-      stickyContainer.style.position = 'static';
-      stuck = false;
-    }
-  }
-*/
+  
+  
 
   main.addEventListener('click', closeMenu);
   menuBtn.addEventListener('click', toggleMenu);
-  speechBtn.addEventListener('click', toggleItem);
+  //speechBtn.addEventListener('click', toggleItem);
   navdrawerContainer.addEventListener('click', function (event) {
     if (event.target.nodeName === 'A' || event.target.nodeName === 'LI') {
       closeMenu();

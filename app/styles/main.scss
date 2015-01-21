@@ -72,13 +72,15 @@ body.open {
   -webkit-transform: translate(250px, 0);
           transform: translate(250px, 0);
 }
-
+.app-bar .logo-globe, .navlogo {
+  display: none;
+}
 .app-bar .logo {
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
   line-height: 60px;
-  margin: 10px 25%;
+  margin: 10px 13%;
   padding: 0;
   float: none;
   max-width: none;
