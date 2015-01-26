@@ -27,12 +27,6 @@
   var body = document.body;
   var appbarElement = querySelector('.app-bar');
   var menuBtn = querySelector('.menu');
-  var fixHSobre = querySelectorAll('.pSobre');
-  var fixHAgenda = querySelectorAll('.pAgenda');
-  var fixHOradores = querySelectorAll('.pOradores');
-  var fixHUbicacion = querySelectorAll('.pUbicacion');
-  var fixHTIckets = querySelectorAll('.pTickets');
-  var fixHPatrocinadores = querySelectorAll('.pPatrocinadores');
   var speechBtn = querySelector('.speech-container');
   var main = querySelector('main');
 
@@ -53,40 +47,9 @@
     speakDetailsContainer.classList.toggle('opened');
   }
 
-  function hFixSobre() {
-    alert("bamonos");
-    fixHSobre.classList.add('activeH');
-  }
-
-  function hFixAgenda() {
-    fixHAgenda.classList.add('activeH');
-  }
-
-  function hFixOradores() {
-    fixHOradores.classList.add('activeH');
-  }
-
-  function hFixUbicacion() {
-    fixHUbicacion.classList.add('activeH');
-  }
-
-  function hFixTIckets() {
-    fixHTIckets.classList.add('activeH');
-  }
-
-  function hFixPatrocinadores() {
-    fixHPatrocinadores.classList.add('activeH');
-  }
-    
 
   main.addEventListener('click', closeMenu);
   menuBtn.addEventListener('click', toggleMenu);
-  fixHSobre.addEventListener('click', hFixSobre);
-  fixHAgenda.addEventListener('click', hFixAgenda);
-  fixHOradores.addEventListener('click', hFixOradores);
-  fixHUbicacion.addEventListener('click', hFixUbicacion);
-  fixHTIckets.addEventListener('click', hFixTIckets);
-  fixHPatrocinadores.addEventListener('click', hFixPatrocinadores);
   //speechBtn.addEventListener('click', toggleItem);
   navdrawerContainer.addEventListener('click', function (event) {
     if (event.target.nodeName === 'A' || event.target.nodeName === 'LI') {
