@@ -801,20 +801,29 @@ ul.wiad-speaker-list {
     width: 400px;
   }
   .track-table {
-    width: 400px;
+
 
     caption.caption-lab {
-      width: 400px;
-      height: 150px;
     }
     caption.caption-auditorium {
-      width: 400px;
-      height: 150px;
+    }
+
+    thead {
+      width: 100%;
+      display: inline-block;
+      tr {
+        width: 100%;
+        display: inline-block;
+      }
     }
 
     tbody {
+      width: 100%;
+      display: inline-block;
 
       tr {
+        width: 100%;
+        display: inline-block;
         th {
           em.track-time {
             padding-left: 0;
