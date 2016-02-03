@@ -27,6 +27,19 @@ var runSequence = require('run-sequence');
 var browserSync = require('browser-sync');
 var pagespeed = require('psi');
 var reload = browserSync.reload;
+var LastfmAPI = require('lastfmapi');
+  var lfm = new LastfmAPI({
+      'api_key' : '466b7cdb9035dacd8e8083b1d5ae9448',
+      'secret' : 'c5780c66cecb43fa84b86f3e9c68cf0f'
+    });
+  lfm.track.getInfo({
+      'artist' : 'Shakira',
+      'track' : 'Waka Waka'
+    }, function (err, track) {
+      if (err) { throw err; }
+      console.log(track);
+    });
+
 
 var AUTOPREFIXER_BROWSERS = [
   'ie >= 10',

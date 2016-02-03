@@ -18,7 +18,7 @@
  */
 (function () {
   'use strict';
-
+  
   var querySelector = document.querySelector.bind(document);
   var querySelectorAll = document.querySelectorAll.bind(document);
 
@@ -27,8 +27,30 @@
   var body = document.body;
   var appbarElement = querySelector('.app-bar');
   var menuBtn = querySelector('.menu');
+  var lastBtn = querySelector('.lstFM');
   var speechBtn = querySelector('.speech-container');
   var main = querySelector('main');
+
+  
+  var LastfmAPI = require('lastfmapi');
+  var lfm = new LastfmAPI({
+      'api_key' : '466b7cdb9035dacd8e8083b1d5ae9448',
+      'secret' : 'c5780c66cecb43fa84b86f3e9c68cf0f'
+    });
+
+
+  function getLastFM() {
+    console.log("here");
+    alert("click");
+    lfm.track.getInfo({
+      'artist' : 'Shakira',
+      'track' : 'Waka Waka'
+    }, function (err, track) {
+      if (err) { throw err; }
+      console.log(track);
+    });
+
+  }
 
   function closeMenu() {
     body.classList.remove('open');
@@ -48,6 +70,7 @@
   }
 
 
+  lastBtn.addEventListener('click', getLastFM);
   main.addEventListener('click', closeMenu);
   menuBtn.addEventListener('click', toggleMenu);
   //speechBtn.addEventListener('click', toggleItem);
